@@ -1,0 +1,206 @@
+/*-----------------------BANNER INICIAL-----------------------*/
+.imgFondoBannerNosotros {
+    width: 100%;
+    height: 400px;
+    background-image: url("../images/imagenesBanners/imagenBanner_Nosotros.png");
+    background-position: bottom;
+}
+
+/*-----------------------SECCIÓN QUIÉNES SOMOS-----------------------*/
+.contenerdorDescripación {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    margin: 0px 0px 0px 0px;
+}
+
+.contenerdorDescripación_img {
+    width: 557px;
+    padding: 0px;
+}
+
+.contenerdorDescripación_p {
+    margin: 0px 0px 0px 24px;
+    padding: 0;
+}
+
+/*-----------------------SECCIÓN NUESTRO PROCESO-----------------------*/
+.contenerdorCards {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*-----------------------SECCIÓN NUESTRO PROCESO - CARDS-----------------------*/
+.cardProceso {
+    height: 357px;
+    width: 361px;
+    background-color: #FFFFFF;
+    padding: 0px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cardProceso__img {
+    width: 96px;
+    height: 96px;
+    filter: invert(15%) sepia(23%) saturate(1000%) hue-rotate(152deg) brightness(95%) contrast(90%);
+    margin: 24px 0px 8px 0px;
+}
+
+.cardProceso__div-1 {
+    margin: 0px 18px 8px 18px;
+}
+
+.cardProceso__div-1__h3 {
+    margin: 0px 0px 16px 0px;
+    color: #1D343E;
+    text-align: center;
+}
+
+.cardProceso__div-1__p {
+    font-size: 0px;
+    text-align: center;
+    font-size: 0px;
+}
+
+.cardProceso__div-2 {
+    width: 0px;
+    height: 4px;
+    background-color: transparent;
+    position: absolute;
+    bottom: 0px;
+}
+
+.cardProceso:hover .cardProceso__div-2 {
+    width: 100%;
+    background-color: #C19C00;
+    transition: all 200ms linear;
+}
+
+.cardProceso:hover .cardProceso__div-1__h3 {
+    color: #C19C00;
+    transition: all 200ms ease;
+}
+
+.cardProceso:hover .cardProceso__div-1__p {
+    font-size: 14px;
+    transition: all 200ms linear;
+}
+
+.cardProceso:hover .cardProceso__img {
+    filter: invert(62%) sepia(41%) saturate(5289%) hue-rotate(23deg) brightness(101%) contrast(103%);
+    transition: all 200ms ease;
+}
+
+/*-----------------------SECCIÓN NUESTRO EQUIPO - CARDS-----------------------*/
+.paddingSeccion {
+    padding: 80px 0px 136px 0px;
+}
+
+.cardEquipoNosotros {
+    display: flex;
+    background-color: #FFFFFF;
+    width: 557px;
+    height: 400px;
+    margin: 0px 0px 40px 0px;
+}
+
+.cardEquipoNosotros__div {
+    margin: 32px 24px 32px 24px;
+}
+
+/*-----------------------TABLET-----------------------*/
+@media (max-width: 1024px) {
+     .contenedorSeccion {
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .contenedorSeccionDark {
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .marginSeccion {
+        margin: 0px 0px 64px 0px;
+    }
+
+    .contenerdorCards {
+        width: 90%;
+        display: block;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /*-----------------------SECCIÓN QUIÉNES SOMOS-----------------------*/
+    .contenerdorDescripación {
+        width: 90%;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .contenerdorDescripación_img {
+        width: 100%;
+    }
+
+    .contenerdorDescripación_p {
+        margin: 16px 0px 0px 0px;
+        padding: 0;
+    }
+
+    /*-----------------------SECCIÓN NUESTRO PROCESO-----------------------*/
+    .cardProceso {
+        height: auto;
+        width: 100%;
+        padding: 0px;
+        margin: 0px 0px 16px 0px;
+    }
+
+    /*-----------------------SECCIÓN NUESTRO EQUIPO-----------------------*/
+    .cardEquipoNosotros {
+        width: 100%;
+    }
+}
+
+/*-----------------------MOBILE-----------------------*/
+@media (max-width: 768px) {
+
+    /*-----------------------BANNER INICIAL-----------------------*/
+    .imgFondoBannerNosotros {
+        width: 100%;
+        height: 248px;
+        background-image: url("../images/imagenesBanners/imagenBanner_Nosotros_Mobile.png");
+        background-position: bottom;
+    }
+
+    /*-----------------------SECCIÓN NUESTRO EQUIPO-----------------------*/
+    .cardEquipoNosotros__img {
+        width: 141px;
+        height: 211px;
+        margin: 16px 0px 16px 16px;
+    }
+
+    .cardEquipoNosotros {
+        align-items: center;
+        height: fit-content;
+    }
+
+    .cardEquipoNosotros__div {
+        margin: 16px;
+    }
+}

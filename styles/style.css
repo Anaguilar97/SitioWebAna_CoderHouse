@@ -1,0 +1,812 @@
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background-color: #E8E8E8;
+}
+
+#body_grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+}
+
+/*-----------------------TIPOGRAFÍAS-----------------------*/
+.h2-Light {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  letter-spacing: 0.07em;
+  color: #1d343e;
+}
+
+.h2-Dark {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  letter-spacing: 0.07em;
+  color: #FFFFFF;
+}
+
+.h3-Light {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: #1D343E;
+}
+
+.h3-Dark {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: #FFFFFF;
+}
+
+.subtitle-1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.0015em;
+  color: #1D343E;
+}
+
+.body_1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #454545;
+}
+
+.body_2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.0025em;
+  color: #454545;
+}
+
+.body_2-mobile {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.0025em;
+  color: #454545;
+}
+
+.caption {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.004em;
+  color: #454545;
+}
+
+/*-----------------------TÍTULOS SECCIONES-----------------------*/
+.contenedorTitulo {
+  width: 80%;
+  margin: 0px 0px 72px 0px;
+}
+
+.contenedor-h1 {
+  width: fit-content;
+  position: relative;
+}
+
+.contenedor-h1__div {
+  background-color: #dbb100;
+  height: 35%;
+  width: 60%;
+  position: absolute;
+  left: 0px;
+  bottom: 4px;
+}
+
+.contenedor-h1__h1 {
+  width: fit-content;
+  height: fit-content;
+  margin: 0px;
+  position: relative;
+  z-index: 0;
+}
+
+/*-----------------------BOTÓN SECUNDARIO-----------------------*/
+.btnStroke_Light {
+  background-color: transparent;
+  border: #c19c00 solid 3px;
+  padding: 9px 13px 9px 13px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #c19c00;
+  cursor: pointer;
+}
+.btnStroke_Light:hover {
+  background-color: #dbb100;
+  border: #dbb100 solid 3px;
+  color: white;
+  transition: all 150ms ease;
+}
+.btnStroke_Light:focus {
+  background-color: #705a00;
+  border: #705a00 solid 4px;
+  color: white;
+  transition: all 150ms ease;
+}
+
+/*-----------------------BOTÓN VER MÁS-----------------------*/
+.btnText {
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #C19C00;
+  display: flex;
+  align-items: center;
+}
+.btnText:hover {
+  color: #DBB100;
+}
+.btnText:focus {
+  color: #C19C00;
+}
+
+.btnText_Icon {
+  margin-left: 8px;
+  filter: invert(51%) sepia(89%) saturate(956%) hue-rotate(19deg) brightness(97%) contrast(101%);
+}
+
+.btnText:hover img {
+  filter: invert(54%) sepia(99%) saturate(691%) hue-rotate(14deg) brightness(103%) contrast(101%);
+}
+
+.btnText:focus img {
+  filter: invert(51%) sepia(89%) saturate(956%) hue-rotate(19deg) brightness(97%) contrast(101%);
+}
+
+/*-----------------------BOTÓN SCROLLDOWN-----------------------*/
+.btn_scrollDown {
+  background-color: transparent;
+  border: 0px;
+}
+.btn_scrollDown:hover {
+  transform: translateY(-2px);
+  transition: all 150ms linear;
+}
+
+/*-----------------------ICONO MENÚ HAMBUERGUESA-----------------------*/
+.header__nav__div {
+  height: 32px;
+}
+
+.lbl_Menu {
+  width: 32px;
+  height: 32px;
+  position: relative;
+  cursor: pointer;
+  display: none;
+}
+
+.lbl_Menu #top,
+#medio,
+#bottom {
+  position: absolute;
+  content: "";
+  background-color: #C19C00;
+  width: 32px;
+  height: 4px;
+  transition: all 500ms ease-out;
+}
+
+#btn_Menu {
+  display: none;
+}
+
+#top {
+  top: 0px;
+}
+
+#medio {
+  top: 12px;
+}
+
+#bottom {
+  top: 24px;
+}
+
+#btn_Menu:checked ~ .lbl_Menu #top {
+  transform: rotate(45deg);
+  top: 12px;
+  transition: 500ms;
+}
+
+#btn_Menu:checked ~ .lbl_Menu #medio {
+  opacity: 0;
+  transition: 500ms;
+}
+
+#btn_Menu:checked ~ .lbl_Menu #bottom {
+  transform: rotate(-45deg);
+  top: 12px;
+  transition: 500ms;
+}
+
+/*-----------------------MENÚ PRINCIPAL-----------------------*/
+header {
+  background-color: #FFFFFF;
+  width: 100%;
+  box-shadow: 0px 4px 8px rgba(29, 52, 62, 0.16);
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #FFFFFF;
+  align-items: center;
+  margin: 0px 136px 0px 136px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.header__nav__div {
+  display: none;
+}
+
+.header__nav_ul {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+}
+
+.header__nav_ul__li {
+  margin-right: 16px;
+}
+
+.header__nav_ul__li__a {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1.25px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #1D343E;
+}
+.header__nav_ul__li__a:hover {
+  color: #C19C00;
+  transition: all 200ms ease;
+}
+
+.seleccionado {
+  color: #C19C00;
+  border-bottom: solid 3px #C19C00;
+  cursor: default;
+}
+
+.header__nav_ul__li-Btn {
+  margin-left: 16px;
+}
+
+/*-----------------------FOOTER-----------------------*/
+footer {
+  background-color: #FFFFFF;
+  width: 100%;
+  padding: 88px 0px 16px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.footer__div {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 0px 80px 0px;
+  background-color: #FFFFFF;
+}
+
+.footer__div__img {
+  width: 166px;
+  height: 144px;
+}
+
+.footer__p {
+  width: 90%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-family: "Mulish", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  color: #969696;
+  margin: 0px;
+}
+
+.footer__caption {
+  margin: 0px 0px 16px 0px;
+}
+
+.footer__nav {
+  display: flex;
+}
+
+.footer__ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+.columna__2 {
+  margin: 0px 0px 0px 24px;
+}
+
+.btn_redes {
+  background-color: transparent;
+  border: 0px;
+  margin: 8px 24px 0px 0px;
+}
+
+.footer__enlace:hover {
+  color: #C19C00;
+}
+
+/*-----------------------BANNERS INICIALES-----------------------*/
+.sectionBanner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0px 0px 96px 0px;
+}
+
+.sectionBanner__h1 {
+  width: 70%;
+  position: absolute;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  color: #FFFFFF;
+  margin: 0px;
+}
+
+/*-----------------------CONTENEDORES SECCIONES-----------------------*/
+.contenedorSeccion {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contenedorSeccionDark {
+  width: 100%;
+  background-color: #1D343E;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.marginSeccion {
+  margin: 0px 0px 96px 0px;
+}
+
+/*-----------------------TABLET-----------------------*/
+@media (max-width: 1024px) {
+  /*----------------------TITULOS-----------------------*/
+  .h2-Light {
+    font-size: 28px;
+  }
+  .h2-Dark {
+    font-size: 28px;
+  }
+  .contenedorTitulo {
+    width: 90%;
+    margin: 0px 0px 48px 0px;
+  }
+  /*-----------------------MENÚ PRINCIPAL-----------------------*/
+  .header__nav_ul__li__a {
+    font-size: 12px;
+  }
+  .header__nav_ul__li {
+    margin-right: 12px;
+  }
+  .header__nav_ul__li-Btn {
+    margin-left: 12px;
+  }
+  .header__nav {
+    margin: 0px 40px 0px 40px;
+  }
+  /*-----------------------BANNER INICIAL-----------------------*/
+  .sectionBanner {
+    margin: 0px 0px 64px 0px;
+  }
+  .sectionBanner__h1 {
+    font-size: 32px;
+    width: 90%;
+  }
+  /*-----------------------FOOTER-----------------------*/
+  footer {
+    padding: 24px 0px 24px 0px;
+  }
+  .footer__div {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+    margin: 0px 0px 32px 0px;
+  }
+  .footer__div__div {
+    width: 100%;
+    padding: 24px 0px 24px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: solid 1px #81939B;
+  }
+  .footer__ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .footer__nav {
+    align-items: flex-start;
+  }
+}
+/*-----------------------MOBILE-----------------------*/
+@media (max-width: 768px) {
+  .body_2-mobile {
+    font-size: 12px;
+  }
+  /*----------------------TITULOS-----------------------*/
+  .h2-Light {
+    font-size: 24px;
+  }
+  .h2-Dark {
+    font-size: 24px;
+  }
+  .contenedorTitulo {
+    width: 90%;
+    margin: 0px 0px 48px 0px;
+  }
+  .contenerdorCards {
+    width: 90%;
+  }
+  /*-----------------------MENÚ PRINCIPAL-----------------------*/
+  .header__nav {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: 0px 20px 0px 20px;
+  }
+  .seleccionado {
+    color: #C19C00;
+    border-bottom: solid 0px #C19C00;
+    cursor: default;
+  }
+  .header__nav_ul__li__a {
+    font-size: 14px;
+  }
+  .lbl_Menu {
+    display: block;
+  }
+  .header__nav_ul {
+    background-color: #FFFFFF;
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    padding: 56px 0px 0px 0px;
+    transition: all 250ms linear;
+    z-index: 1;
+    border-top: #C19C00 solid 2px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header__nav_ul__li {
+    margin: 0px 0px 32px 0px;
+  }
+  .header__nav_ul__li-Btn {
+    margin-left: 0px;
+  }
+  #btn_Menu:checked ~ .header__nav_ul {
+    left: 0;
+  }
+  /*-----------------------BANNER INICIAL-----------------------*/
+  .sectionBanner__h1 {
+    font-size: 24px;
+    width: 90%;
+  }
+}
+/*-----------------------BANNER INICIAL-----------------------*/
+.imgFondoBannerNosotros {
+  width: 100%;
+  height: 400px;
+  background-image: url("../images/imagenesBanners/imagenBanner_Nosotros.png");
+  background-position: bottom;
+}
+
+/*-----------------------SECCIÓN QUIÉNES SOMOS-----------------------*/
+.contenerdorDescripación {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  margin: 0px 0px 0px 0px;
+}
+
+.contenerdorDescripación_img {
+  width: 557px;
+  padding: 0px;
+}
+
+.contenerdorDescripación_p {
+  margin: 0px 0px 0px 24px;
+  padding: 0;
+}
+
+/*-----------------------SECCIÓN NUESTRO PROCESO-----------------------*/
+.contenerdorCards {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*-----------------------SECCIÓN NUESTRO PROCESO - CARDS-----------------------*/
+.cardProceso {
+  height: 357px;
+  width: 361px;
+  background-color: #FFFFFF;
+  padding: 0px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cardProceso__img {
+  width: 96px;
+  height: 96px;
+  filter: invert(15%) sepia(23%) saturate(1000%) hue-rotate(152deg) brightness(95%) contrast(90%);
+  margin: 24px 0px 8px 0px;
+}
+
+.cardProceso__div-1 {
+  margin: 0px 18px 8px 18px;
+}
+
+.cardProceso__div-1__h3 {
+  margin: 0px 0px 16px 0px;
+  color: #1D343E;
+  text-align: center;
+}
+
+.cardProceso__div-1__p {
+  font-size: 0px;
+  text-align: center;
+  font-size: 0px;
+}
+
+.cardProceso__div-2 {
+  width: 0px;
+  height: 4px;
+  background-color: transparent;
+  position: absolute;
+  bottom: 0px;
+}
+
+.cardProceso:hover .cardProceso__div-2 {
+  width: 100%;
+  background-color: #C19C00;
+  transition: all 200ms linear;
+}
+
+.cardProceso:hover .cardProceso__div-1__h3 {
+  color: #C19C00;
+  transition: all 200ms ease;
+}
+
+.cardProceso:hover .cardProceso__div-1__p {
+  font-size: 14px;
+  transition: all 200ms linear;
+}
+
+.cardProceso:hover .cardProceso__img {
+  filter: invert(62%) sepia(41%) saturate(5289%) hue-rotate(23deg) brightness(101%) contrast(103%);
+  transition: all 200ms ease;
+}
+
+/*-----------------------SECCIÓN NUESTRO EQUIPO - CARDS-----------------------*/
+.paddingSeccion {
+  padding: 80px 0px 136px 0px;
+}
+
+.cardEquipoNosotros {
+  display: flex;
+  background-color: #FFFFFF;
+  width: 557px;
+  height: 400px;
+  margin: 0px 0px 40px 0px;
+}
+
+.cardEquipoNosotros__div {
+  margin: 32px 24px 32px 24px;
+}
+
+/*-----------------------TABLET-----------------------*/
+@media (max-width: 1024px) {
+  .contenedorSeccion {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .contenedorSeccionDark {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .marginSeccion {
+    margin: 0px 0px 64px 0px;
+  }
+  .contenerdorCards {
+    width: 90%;
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+  }
+  /*-----------------------SECCIÓN QUIÉNES SOMOS-----------------------*/
+  .contenerdorDescripación {
+    width: 90%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .contenerdorDescripación_img {
+    width: 100%;
+  }
+  .contenerdorDescripación_p {
+    margin: 16px 0px 0px 0px;
+    padding: 0;
+  }
+  /*-----------------------SECCIÓN NUESTRO PROCESO-----------------------*/
+  .cardProceso {
+    height: auto;
+    width: 100%;
+    padding: 0px;
+    margin: 0px 0px 16px 0px;
+  }
+  /*-----------------------SECCIÓN NUESTRO EQUIPO-----------------------*/
+  .cardEquipoNosotros {
+    width: 100%;
+  }
+}
+/*-----------------------MOBILE-----------------------*/
+@media (max-width: 768px) {
+  /*-----------------------BANNER INICIAL-----------------------*/
+  .imgFondoBannerNosotros {
+    width: 100%;
+    height: 248px;
+    background-image: url("../images/imagenesBanners/imagenBanner_Nosotros_Mobile.png");
+    background-position: bottom;
+  }
+  /*-----------------------SECCIÓN NUESTRO EQUIPO-----------------------*/
+  .cardEquipoNosotros__img {
+    width: 141px;
+    height: 211px;
+    margin: 16px 0px 16px 16px;
+  }
+  .cardEquipoNosotros {
+    align-items: center;
+    height: fit-content;
+  }
+  .cardEquipoNosotros__div {
+    margin: 16px;
+  }
+}
+/*-----------------------BANNER INICIAL-----------------------*/
+.imgFondoBannerCasosExito {
+  width: 100%;
+  height: 400px;
+  background-image: url("../images/imagenesBanners/imagenBanner_CasosExito.png");
+  background-position: bottom;
+}
+
+/*-----------------------SECCIÓN CASOS DESTACADOS-----------------------*/
+.cardCasoExito {
+  background-color: #FFFFFF;
+  width: 361px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0px 16px 40px 16px;
+}
+
+.cardCasoExito__img {
+  margin: 32px 40px 24px 40px;
+}
+
+.cardCasoExito__div {
+  margin: 0px 0px 32px 0px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardCasoExito__div__p {
+  margin-bottom: 32px;
+}
+
+.cardCasoExito__div__a {
+  justify-content: right;
+}
+
+.cardCasoExito__resalto {
+  width: 0%;
+  height: 4px;
+  background-color: #C19C00;
+  position: absolute;
+  bottom: 0px;
+}
+
+.cardCasoExito:hover .cardCasoExito__resalto {
+  width: 100%;
+  transition: all 200ms linear;
+}
+
+.contenedorCardsCasosExito {
+  width: 80%;
+}
+
+/*-----------------------MOBILE-----------------------*/
+@media (max-width: 953px) {
+  /*-----------------------BANNER INICIAL-----------------------*/
+  .imgFondoBannerCasosExito {
+    width: 100%;
+    height: 248px;
+    background-image: url("../images/imagenesBanners/imagenBanner_CasosExito_Mobile.png");
+    background-position: bottom;
+  }
+  /*-----------------------CARDS CASOS DESTACADOS-----------------------*/
+  .cardCasoExito {
+    width: 100%;
+    margin: 0px 0px 40px 0px;
+  }
+  .cardCasoExito__div {
+    width: 90%;
+  }
+  .contenedorCardsCasosExito {
+    width: 90%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
