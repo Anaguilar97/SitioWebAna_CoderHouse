@@ -70,6 +70,16 @@ body {
     color: #454545;
 }
 
+.body_1-Dark {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.005em;
+    color: #FFFFFF;
+}
+
+
 .body_2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -579,5 +589,14 @@ footer {
     .sectionBanner__h1 {
         font-size: 24px;
         width: 90%;
+    }
+
+    /*-----------------------TIPOGRAFÍAS-----------------------*/
+    .h3-Dark {
+        font-size: 20px;
+    }
+
+    .body_1-Dark {
+        font-size: 14px;
     }
 }
