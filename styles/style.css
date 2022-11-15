@@ -71,6 +71,15 @@ body {
   color: #454545;
 }
 
+.body_1-Dark {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #FFFFFF;
+}
+
 .body_2 {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -537,6 +546,13 @@ footer {
     font-size: 24px;
     width: 90%;
   }
+  /*-----------------------TIPOGRAFÍAS-----------------------*/
+  .h3-Dark {
+    font-size: 20px;
+  }
+  .body_1-Dark {
+    font-size: 14px;
+  }
 }
 /*-----------------------BANNER INICIAL-----------------------*/
 .imgFondoBannerNosotros {
@@ -806,6 +822,132 @@ footer {
   }
   .contenedorCardsCasosExito {
     width: 90%;
+  }
+}
+/*-----------------------BANNER INICIAL-----------------------*/
+.imgFondoBannerContacto {
+  width: 100%;
+  height: 400px;
+  background-image: url("../images/imagenesBanners/imagenBanner_Contacto.png");
+  background-position: bottom;
+}
+
+/*-----------------------SECCIÓN CONTACTO-----------------------*/
+.seccionContacto {
+  width: 80%;
+  height: fit-content;
+  position: relative;
+}
+
+/*-----------------------SECCIÓN INFORMACIÓN-----------------------*/
+.seccionInfo {
+  background-color: #1D343E;
+  width: 58%;
+  padding: 40px 40px 48px 40px;
+  right: 0px;
+}
+
+.seccionInfo__div {
+  width: 80%;
+}
+
+.seccionInfo__div__div {
+  margin: 0px 0px 40px 0px;
+}
+
+.seccionInfo__div__div__table {
+  width: auto;
+}
+
+.seccionInfo__div__table__tr__th {
+  width: 203px;
+  background-color: #81939B;
+  color: #1D343E;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  padding: 8px 0px 8px 0px;
+  border: #1D343E solid 4px;
+}
+
+.seccionInfo__div__table__tr__td {
+  padding: 8px 0px 8px 0px;
+  border: #1D343E solid 4px;
+  background-color: rgba(129, 147, 155, 0.3);
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.0025em;
+  color: #FFFFFF;
+}
+
+/*-----------------------SECCIÓN FORMULARIO-----------------------*/
+.seccionFormulario {
+  width: 50%;
+  background-color: #FFFFFF;
+  padding: 48px;
+  position: absolute;
+  top: 32px;
+  right: 0px;
+}
+
+.seccionFormulario__form__div {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1024px) {
+  /*-----------------------SECCIÓN CONTACTO-----------------------*/
+  .seccionContacto {
+    height: 1100px;
+  }
+  /*-----------------------SECCIÓN INFORMACIÓN-----------------------*/
+  .seccionInfo {
+    width: 100%;
+    padding: 40px 40px 80px 40px;
+  }
+  .seccionInfo__div {
+    width: 90%;
+  }
+  /*-----------------------SECCIÓN FORMULARIO-----------------------*/
+  .seccionFormulario {
+    width: 90%;
+    top: 560px;
+    right: 5%;
+    left: 5%;
+  }
+}
+@media (max-width: 768px) {
+  /*-----------------------SECCIÓN CONTACTO-----------------------*/
+  .seccionContacto {
+    width: 90%;
+  }
+  /*-----------------------SECCIÓN INFORMACIÓN-----------------------*/
+  .seccionInfo {
+    width: 100%;
+    padding: 24px 16px 80px 16px;
+  }
+  .seccionInfo__div {
+    width: 100%;
+  }
+  .seccionInfo__div__div__table {
+    width: 100%;
+  }
+  .seccionInfo__div__table__tr__td {
+    font-size: 10px;
+  }
+  /*-----------------------SECCIÓN FORMULARIO-----------------------*/
+  .seccionFormulario {
+    top: 520px;
+  }
+  /*-----------------------BANNER INICIAL-----------------------*/
+  .imgFondoBannerContacto {
+    width: 100%;
+    height: 248px;
+    background-image: url("../images/imagenesBanners/imagenBanner_Contacto_Mobile.png");
+    background-position: bottom;
   }
 }
 
