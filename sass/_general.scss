@@ -61,6 +61,14 @@ body {
     color: #1D343E;
 }
 
+.subtitle-2 {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.0015em;
+    color: #1D343E;
+}
+
 .body_1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -113,6 +121,11 @@ body {
     margin: 0px 0px 72px 0px;
 }
 
+.contenedorTitulo_dark{
+    display: flex;
+    justify-content: end;
+}
+
 .contenedor-h1 {
     width: fit-content;
     position: relative;
@@ -126,6 +139,11 @@ body {
     position: absolute;
     left: 0px;
     bottom: 4px;
+}
+
+.contenedor-h1__div_dark{
+    right: 0px;
+    left: auto;
 }
 
 .contenedor-h1__h1 {
