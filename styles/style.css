@@ -1203,4 +1203,77 @@ footer {
   background-position: bottom;
 }
 
+/*-----------------------CONTENEDOR SECCIÓN NOVEDADES-----------------------*/
+.contenedorSeccionNovedades {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0px 0px 0px 0px;
+}
+
+/*-----------------------CARDS NOVEDADES-----------------------*/
+.cardNovedades {
+  background-color: #FFFFFF;
+  width: 800px;
+  display: flex;
+  align-items: center;
+  margin: 0px 0px 48px 0px;
+}
+
+.cardNovedades__div-img {
+  position: relative;
+}
+
+.cardNovedades__div-img__p {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: fit-content;
+  padding: 4px 8px 4px 8px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #FFFFFF;
+  background-color: #C19C00;
+}
+
+.cardNovedades__div-txt {
+  padding: 0px 24px 0px 24px;
+  height: auto;
+}
+
+.cardNovedades__div-txt__lblFecha {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: #969696;
+  margin: 0px 0px 8px 0px;
+}
+
+.cardNovedades__div-txt__title {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #1D343E;
+  margin: 0px 0px 8px 0px;
+}
+
+.cardNovedades__div-txt__description {
+  margin: 0px 0px 8px 0px;
+}
+
+.cardNovedades__div-txt__base {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cardNovedades__div-txt__base__p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: #969696;
+  margin: 0px;
+}
+
 /*# sourceMappingURL=style.css.map */
