@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mantente al día en cuanto a noticias, artículos y novedades, sobre economía, finanzas y comercio.">
+    <meta name="description"
+        content="Mantente al día en cuanto a noticias, artículos y novedades, sobre economía, finanzas y comercio.">
     <meta name="keywords" content="Estrategias, Crecimiento, Empresas, Experticia, Ganacias, Finanzas, Economía">
     <title>BtoB Negocios | Novedades</title>
     <link rel="icon" href="../images/favicon.ico">
@@ -107,22 +108,120 @@
         <!--CONTENIDO SECCIÓN-->
         <div class="contenedorSeccionNovedades">
 
+            
+
+            <!--SECCIÓN FILTROS-->
+            <div>
+                <form class="formBusqueda">
+                    <div class="inputAreaSearch">
+
+                        <input class="inputAreaSearch__input" type="text" id="busqueda" name="busqueda">
+
+                        <label class="inputAreaSearch__label" for="busqueda">Buscar</label>
+                        <img class="inputAreaSearch__img" src="../images/imgsBtns/Icono_Search.svg" alt="icono search">
+                    </div>
+                </form>
+
+                <div class="seccionFiltros">
+                    <h3 class="h3-Dark tituloFiltros">Filtrar por:</h3>
+                    <div class="seccionFiltros__div">
+
+                        <div class="seccionFiltros__div__titulo">
+                            <p class="seccionFiltros__div__titulo__p">Año</p>
+                            <div class="seccionFiltros__div__titulo__div"></div>
+                        </div>
+                        
+                        <form class="seccionFiltros__div__form">
+
+                            <div class="contenedorCheckBoxNovedades">
+                                <input class="contenedorCheckBox__input" type="checkbox" id="politicaDatos" name="politicaDatos" value="true">
+                                <label class="contenedorCheckBox__label body_1-Dark" for="politicaDatos">2022</label>
+                            </div>
+
+                            <div class="contenedorCheckBoxNovedades">
+                                <input class="contenedorCheckBox__input" type="checkbox" id="politicaDatos" name="politicaDatos" value="true">
+                                <label class="contenedorCheckBox__label body_1-Dark" for="politicaDatos">2021</label>
+                            </div>
+
+                            <div class="contenedorCheckBoxNovedades">
+                                <input class="contenedorCheckBox__input" type="checkbox" id="politicaDatos" name="politicaDatos" value="true">
+                                <label class="contenedorCheckBox__label body_1-Dark" for="politicaDatos">2020</label>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <div class="seccionFiltros__div">                       
+                        <div class="seccionFiltros__div__titulo">
+                            <p class="seccionFiltros__div__titulo__p">Mes</p>
+                            <div class="seccionFiltros__div__titulo__div"></div>
+                        </div>
+                        <div class="inputAreaDark">
+                            <select class="inputAreaDark__input" name="pais" id="pais">
+                                <option selected hidden>Selecciona un mes</option>
+                                <option value="01">Enero</option>
+                                <option value="02">Febrero</option>
+                                <option value="03">Marzo</option>
+                                <option value="04">Abril</option>
+                                <option value="05">Mayo</option>
+                                <option value="06">Junio</option>
+                                <option value="07">Julio</option>
+                                <option value="08">Agosto</option>
+                                <option value="09">Septiembre</option>
+                                <option value="10">Octubre</option>
+                                <option value="11">Noviembre</option>
+                                <option value="12">Diciembre</option>
+                            </select>
+                            <label class="inputAreaDark__label" for="pais">País de residencia:</label>
+                        </div>
+                    </div>
+
+                    <div class="seccionFiltros__div">
+                        
+                        <div class="seccionFiltros__div__titulo">
+                            <p class="seccionFiltros__div__titulo__p">Categoría</p>
+                            <div class="seccionFiltros__div__titulo__div"></div>
+                        </div>
+
+                        <form class="seccionFiltros__div__form">
+
+                            <div class="contenedorCheckBoxNovedades">
+                                <input class="contenedorCheckBox__input" type="checkbox" id="politicaDatos" name="politicaDatos" value="true">
+                                <label class="contenedorCheckBox__label body_1-Dark" for="politicaDatos">Finanzas</label>
+                            </div>
+
+                            <div class="contenedorCheckBoxNovedades">
+                                <input class="contenedorCheckBox__input" type="checkbox" id="politicaDatos" name="politicaDatos" value="true">
+                                <label class="contenedorCheckBox__label body_1-Dark" for="politicaDatos">Inversión</label>
+                            </div>
+
+                            <div class="contenedorCheckBoxNovedades">
+                                <input class="contenedorCheckBox__input" type="checkbox" id="politicaDatos" name="politicaDatos" value="true">
+                                <label class="contenedorCheckBox__label body_1-Dark" for="politicaDatos">Economía</label>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
             <!--CARDS NOVEDADES-->
             <div>
-
                 <!--CARD 1-->
                 <div class="cardNovedades">
 
                     <div class="cardNovedades__div-img">
-                        <img src="../images/FotosBlog/ImagenArticulo_1.png" alt="Foto finanzas">
+                        <img class="cardNovedades__div-img__img" src="../images/FotosBlog/ImagenArticulo_1.png" alt="Foto finanzas">
                         <p class="cardNovedades__div-img__p">Finanzas</p>
                     </div>
 
                     <div class="cardNovedades__div-txt">
                         <p class="cardNovedades__div-txt__lblFecha">21 / 07 / 2022</p>
                         <div>
-                            <p class="cardNovedades__div-txt__title">¿Cómo entender a los nuevos consumidores del sector financiero?</p>
-                            <p class="body_2 cardNovedades__div-txt__description">Como ocurre en muchas industrias, el sector financiero enfrenta un cambio importante
+                            <p class="cardNovedades__div-txt__title">¿Cómo entender a los nuevos consumidores del sector
+                                financiero?</p>
+                            <p class="body_2 cardNovedades__div-txt__description">Como ocurre en muchas industrias, el
+                                sector financiero enfrenta un cambio importante
                                 en los hábitos de consumo de sus servicios, presionado por la transformación
                                 digital.</p>
                         </div>
@@ -141,15 +240,17 @@
                 <div class="cardNovedades">
 
                     <div class="cardNovedades__div-img">
-                        <img src="../images/FotosBlog/ImagenArticulo_2.png" alt="Foto finanzas">
+                        <img class="cardNovedades__div-img__img" src="../images/FotosBlog/ImagenArticulo_2.png" alt="Foto finanzas">
                         <p class="cardNovedades__div-img__p">Economía</p>
                     </div>
 
                     <div class="cardNovedades__div-txt">
                         <p class="cardNovedades__div-txt__lblFecha">15 / 07 / 2022</p>
                         <div>
-                            <p class="cardNovedades__div-txt__title">Los 1,6 millones que llegaron a la banca en la pandemia para quedarse</p>
-                            <p class="body_2 cardNovedades__div-txt__description">En medio de cifras negativas de quiebra de empresas y comercios, de pérdida de
+                            <p class="cardNovedades__div-txt__title">Los 1,6 millones que llegaron a la banca en la
+                                pandemia para quedarse</p>
+                            <p class="body_2 cardNovedades__div-txt__description">En medio de cifras negativas de
+                                quiebra de empresas y comercios, de pérdida de
                                 empleos, de la caída de la productividad y el desplome económico que ha dejado la
                                 pandemia del...</p>
                         </div>
@@ -168,15 +269,17 @@
                 <div class="cardNovedades">
 
                     <div class="cardNovedades__div-img">
-                        <img src="../images/FotosBlog/ImagenArticulo_3.png" alt="Foto finanzas">
+                        <img class="cardNovedades__div-img__img" src="../images/FotosBlog/ImagenArticulo_3.png" alt="Foto finanzas">
                         <p class="cardNovedades__div-img__p">Inversión</p>
                     </div>
 
                     <div class="cardNovedades__div-txt">
                         <p class="cardNovedades__div-txt__lblFecha">02 / 07 / 2022</p>
                         <div>
-                            <p class="cardNovedades__div-txt__title">Inversionistas que vendrían al país a pesar de bajada de nota de Fitch</p>
-                            <p class="body_2 cardNovedades__div-txt__description">Por cuenta de la segunda baja de nota del grado de inversión de Colombia de la
+                            <p class="cardNovedades__div-txt__title">Inversionistas que vendrían al país a pesar de
+                                bajada de nota de Fitch</p>
+                            <p class="body_2 cardNovedades__div-txt__description">Por cuenta de la segunda baja de nota
+                                del grado de inversión de Colombia de la
                                 calificadora Fitch Ratings, tras la de Standard & Poor’s, entre $5,7 y $7,7 billones
                                 en inversiones de títulos de deu...</p>
                         </div>
@@ -192,65 +295,6 @@
                 </div>
             </div>
 
-            <!--SECCIÓN FILTROS-->
-            <div>
-                <form>
-                    <label for="busqueda">Filtrar por busqueda</label>
-                    <input id="busqueda" name="busqueda" type="text" placeholder="Buscar">
-                </form>
-                <div>
-                    <h3>Filtrar por:</h3>
-                    <div>
-                        <div>
-                            <p>Año</p>
-                            <form>
-                                <input type="checkbox" id="2022" name="2022" value="2022">
-                                <label for="2022">2022</label>
-
-                                <input type="checkbox" id="2021" name="2021" value="2021">
-                                <label for="2021">2021</label>
-
-                                <input type="checkbox" id="2020" name="2020" value="2020">
-                                <label for="2020">2020</label>
-                            </form>
-                        </div>
-                        <div>
-                            <p>Mes</p>
-                            <form>
-                                <select id="month" name="month">
-                                    <option selected hidden>Selecciona un mes</option>
-                                    <option value="01">Enero</option>
-                                    <option value="02">Febrero</option>
-                                    <option value="03">Marzo</option>
-                                    <option value="04">Abril</option>
-                                    <option value="05">Mayo</option>
-                                    <option value="06">Junio</option>
-                                    <option value="07">Julio</option>
-                                    <option value="08">Agosto</option>
-                                    <option value="09">Septiembre</option>
-                                    <option value="10">Octubre</option>
-                                    <option value="11">Noviembre</option>
-                                    <option value="12">Diciembre</option>
-                                </select>
-                            </form>
-                        </div>
-                        <div>
-                            <p>Categoría</p>
-                            <form>
-                                <input type="checkbox" id="finanzas" name="finanzas" value="1_finanzas">
-                                <label for="finanzas">finanzas</label>
-
-                                <input type="checkbox" id="inversion" name="inversion" value="2_inversion">
-                                <label for="2021">Inversión</label>
-
-                                <input type="checkbox" id="economia" name="economia" value="3_economia">
-                                <label for="2020">Economía</label>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--Sección filtros-->
         </div>
     </section>
 
