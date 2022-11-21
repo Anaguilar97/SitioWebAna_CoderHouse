@@ -110,9 +110,17 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 12px;
-
     letter-spacing: 0.004em;
     color: #454545;
+}
+
+.enlaceTxt {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.004em;
+    color: #C19C00;
+    text-decoration-line: underline;
 }
 
 /*-----------------------TÍTULOS SECCIONES-----------------------*/
@@ -121,7 +129,7 @@ body {
     margin: 0px 0px 72px 0px;
 }
 
-.contenedorTitulo_dark{
+.contenedorTitulo_dark {
     display: flex;
     justify-content: end;
 }
@@ -141,7 +149,7 @@ body {
     bottom: 4px;
 }
 
-.contenedor-h1__div_dark{
+.contenedor-h1__div_dark {
     right: 0px;
     left: auto;
 }
@@ -177,6 +185,32 @@ body {
     &:focus {
         background-color: #705a00;
         border: #705a00 solid 4px;
+        color: white;
+        transition: all 150ms ease;
+    }
+}
+
+/*-----------------------BOTÓN PRIMARIO-----------------------*/
+.btnPrimario_Light {
+    background-color: #c19c00;
+    width: 152px;
+    border: none;
+    padding: 9px 13px 9px 13px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #dbb100;
+        color: white;
+        transition: all 150ms ease;
+    }
+
+    &:focus {
+        background-color: #705a00;
         color: white;
         transition: all 150ms ease;
     }
@@ -448,6 +482,66 @@ footer {
 .marginSeccion {
     margin: 0px 0px 96px 0px;
 }
+
+/*-----------------------INPUTS-----------------------*/
+.inputArea {
+    position: relative;
+    width: 100%;
+    height: 48px;
+    background-color: rgba(129, 147, 155, 10%);
+    margin: 0px 0px 24px 0px;
+}
+
+.inputArea__input {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-bottom: 2px solid transparent;
+    outline: 0;
+    color: #454545;
+    padding: 16px 0px 0px 16px;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+
+.inputArea__label {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    left: 16px;
+    bottom: 12px;
+    position: absolute;
+    display: block;
+    transition: 0.2s;
+    color: #969696;
+    pointer-events: none;
+}
+
+.inputArea__input:focus {
+    font-weight: 700;
+    border-bottom: solid 2px #1D343E;
+}
+
+.inputArea__input:focus~.inputArea__label {
+    position: absolute;
+    top: 2px;
+    left: 8px;
+    display: block;
+    transition: 0.2s;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: #1D343E;
+}
+
+/* reset input*/
+.inputArea__input:required,
+.inputArea__input:invalid {
+    box-shadow: none;
+} 
 
 /*-----------------------TABLET-----------------------*/
 @media (max-width: 1024px) {
