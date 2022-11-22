@@ -536,6 +536,72 @@ footer {
   color: #1D343E;
 }
 
+/*-----------------------INPUTS SELECT-----------------------*/
+.form__group__desplegable {
+  position: relative;
+  padding: 11px 0px 0px 0px;
+  width: 100%;
+  height: 48px;
+  background-color: rgba(129, 147, 155, 0.1);
+  margin: 0px 0px 24px 0px;
+}
+
+.form__field__desplegable {
+  font-family: "Inter", sans-serif;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-bottom: 2px solid transparent;
+  outline: 0;
+  font-size: 17px;
+  color: #454545;
+  padding: 7px 0px 8px 16px;
+  background: transparent;
+  transition: border-color ease-in-out 0.5s;
+}
+
+.form__field__desplegable::placeholder {
+  color: transparent;
+}
+
+.form__field__desplegable:placeholder-shown ~ .form__label__desplegable {
+  font-size: 17px;
+  cursor: text;
+  top: 12px;
+}
+
+.form__label__desplegable {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  left: 16px;
+  top: 2px;
+  position: absolute;
+  display: block;
+  transition: 1s ease-out;
+  color: #969696;
+  pointer-events: none;
+}
+
+.form__field__desplegable:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 2px;
+  border-image: #1D343E;
+  border-image-slice: 1;
+}
+
+.form__field__desplegable:focus ~ .form__label__desplegable {
+  position: absolute;
+  top: 2px;
+  display: block;
+  transition: ease-in-out 0.2s;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  color: #1D343E;
+}
+
 /*-----------------------INPUTS DARK-----------------------*/
 .inputAreaDark {
   position: relative;
@@ -1060,7 +1126,7 @@ footer {
   background-color: #FFFFFF;
   padding: 48px;
   position: absolute;
-  top: 32px;
+  top: 48px;
   right: 0px;
 }
 
