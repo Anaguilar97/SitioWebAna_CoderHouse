@@ -487,7 +487,7 @@ footer {
   border: none;
   border-bottom: 2px solid transparent;
   outline: 0;
-  font-size: 17px;
+  font-size: 16px;
   color: #454545;
   padding: 7px 0px 8px 16px;
   background: transparent;
@@ -654,6 +654,85 @@ footer {
   font-weight: 600;
   font-size: 12px;
   color: #DBB100;
+}
+
+/*-----------------------INPUTS DARK - ICONO-----------------------*/
+.form__groupDarkIcon {
+  position: relative;
+  padding: 20px 0px 0px 0px;
+  width: 100%;
+  height: 48px;
+  background-color: rgba(129, 147, 155, 0.1);
+  margin: 0px 0px 24px 0px;
+}
+
+.form__fieldDarkIcon {
+  font-family: "Inter", sans-serif;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-bottom: 2px solid transparent;
+  outline: 0;
+  font-size: 16px;
+  color: #FFFFFF;
+  padding: 7px 0px 8px 32px;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.form__fieldDarkIcon::placeholder {
+  color: transparent;
+}
+
+.form__fieldDarkIcon:placeholder-shown ~ .form__labelDarkIcon {
+  font-size: 17px;
+  cursor: text;
+  top: 12px;
+}
+
+.form__labelDarkIcon {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  left: 32px;
+  top: 2px;
+  position: absolute;
+  display: block;
+  transition: 0.2s;
+  color: #969696;
+  pointer-events: none;
+}
+
+.form__fieldDarkIcon:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 2px;
+  border-image: linear-gradient(to right, #DBB100, #DBB100);
+  border-image-slice: 1;
+}
+
+.form__fieldDarkIcon:focus ~ .form__labelDarkIcon {
+  position: absolute;
+  top: 2px;
+  display: block;
+  transition: 0.2s;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  color: #DBB100;
+}
+
+.form__fieldDarkIcon__img {
+  position: absolute;
+  left: 8px;
+  bottom: 16px;
+  filter: invert(76%) sepia(1%) saturate(13%) hue-rotate(338deg) brightness(79%) contrast(87%);
+}
+
+.form__fieldDarkIcon:focus ~ .form__fieldDarkIcon__img {
+  bottom: 8px;
+  transition: 0.2s;
+  filter: invert(55%) sepia(97%) saturate(849%) hue-rotate(15deg) brightness(103%) contrast(103%);
 }
 
 /*-----------------------TABLET-----------------------*/
@@ -1546,73 +1625,6 @@ footer {
   margin: 0px 0px 24px 0px;
 }
 
-/*-----------------------SECCIÓN BUSQUEDA - INPUT-----------------------*/
-.inputAreaSearch {
-  position: relative;
-  width: 80%;
-  height: 48px;
-  background-color: rgba(129, 147, 155, 0.1);
-  margin: 0px;
-}
-
-.inputAreaSearch__input {
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  font-weight: 200;
-  width: 100%;
-  height: 100%;
-  border: none;
-  border-bottom: 2px solid transparent;
-  outline: 0;
-  color: #FFFFFF;
-  padding: 16px 0px 0px 32px;
-  background: transparent;
-  transition: border-color 0.2s;
-}
-
-.inputAreaSearch__label {
-  font-family: "Inter", sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-  left: 32px;
-  bottom: 12px;
-  position: absolute;
-  display: block;
-  transition: 0.2s;
-  color: #969696;
-  pointer-events: none;
-}
-
-.inputAreaSearch__img {
-  position: absolute;
-  left: 8px;
-  bottom: 16px;
-  filter: invert(76%) sepia(1%) saturate(13%) hue-rotate(338deg) brightness(79%) contrast(87%);
-}
-
-.inputAreaSearch__input:focus {
-  font-weight: 700;
-  border-bottom: solid 2px #DBB100;
-}
-
-.inputAreaSearch__input:focus ~ .inputAreaSearch__label {
-  position: absolute;
-  top: 2px;
-  left: 8px;
-  display: block;
-  transition: 0.2s;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  color: #DBB100;
-}
-
-.inputAreaSearch__input:focus ~ .inputAreaSearch__img {
-  bottom: 8px;
-  transition: 0.2s;
-  filter: invert(55%) sepia(97%) saturate(849%) hue-rotate(15deg) brightness(103%) contrast(103%);
-}
-
 /*-----------------------SECCIÓN FILTROS-----------------------*/
 .seccionFiltros {
   background-color: #1D343E;
@@ -1625,7 +1637,7 @@ footer {
 
 .tituloFiltros {
   width: 80%;
-  margin: 32px 0px 0px 0px;
+  margin: 32px 0px 32px 0px;
 }
 
 .seccionFiltros__div {
