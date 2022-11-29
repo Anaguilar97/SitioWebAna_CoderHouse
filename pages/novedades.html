@@ -34,277 +34,245 @@
 
 <body id="body_grid">
 
-    <!--HEADER MENÚ PRINCIPAL-->
-    <header>
-        <nav class="header__nav">
+    <!--CONTENIDO PÁGINA-->
+    <main>
+        <!--BANNER SECCIÓN-->
+        <section class="sectionBanner">
+            <h1 class="sectionBanner__h1">ACTUALIDAD</h1>
+            <div class="imgFondoBannerNovedades"></div>
+        </section>
 
-            <!--LOGO EMPRESA MENÚ-->
-            <a href="../index.html">
-                <img src="../images/logoBtoB.svg" alt="Logo BtoB Negocios">
-            </a>
+        <!--SECCIÓN NOVEDADES-->
+        <section class="contenedorSeccion marginSeccion">
 
-            <!--ICONO MENÚ (MOBILE)-->
-
-            <input type="checkbox" id="btn_Menu">
-            <label for="btn_Menu" class="lbl_Menu">
-                <span id="top"></span>
-                <span id="medio"></span>
-                <span id="bottom"></span>
-            </label>
-
-
-            <!--OPCIONES MENÚ-->
-            <ul class="header__nav_ul">
-                <li class="header__nav_ul__li">
-                    <a href="../index.html" class="header__nav_ul__li__a">
-                        INICIO
-                    </a>
-                </li>
-
-                <li class="header__nav_ul__li">
-                    <a href="./nosotros.html" class="header__nav_ul__li__a">
-                        NOSOTROS
-                    </a>
-                </li>
-
-                <li class="header__nav_ul__li">
-                    <a href="./casosDeExito.html" class="header__nav_ul__li__a">
-                        CASOS DE ÉXITO
-                    </a>
-                </li>
-
-                <li class="header__nav_ul__li">
-                    <a href="./novedades.html" class="header__nav_ul__li__a  seleccionado">
-                        NOVEDADES
-                    </a>
-                </li>
-
-                <li class="header__nav_ul__li-Btn">
-                    <a href="./contacto.html">
-                        <button class="btnStroke_Light">CONTÁCTANOS</button>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <!--BANNER SECCIÓN-->
-    <section class="sectionBanner">
-        <h1 class="sectionBanner__h1">ACTUALIDAD</h1>
-        <div class="imgFondoBannerNovedades"></div>
-    </section>
-
-    <!--SECCIÓN NOVEDADES-->
-    <section class="contenedorSeccion marginSeccion">
-
-        <!--TÍTULO SECCIÓN-->
-        <div class="contenedorTitulo">
-            <div class="contenedor-h1">
-                <div class="contenedor-h1__div"></div>
-                <h2 class="contenedor-h1__h1 h2-Light">NOVEDADES</h2>
-            </div>
-        </div>
-
-        <!--CONTENIDO SECCIÓN-->
-        <div class="contenedorSeccionNovedades">
-
-            <!--SECCIÓN FILTROS-->
-            <div>
-
-                <div class="seccionFiltros">
-                    <h3 class="h3-Dark tituloFiltros">Filtrar por:</h3>
-                    <div class="seccionFiltros__div">
-
-                        <div class="form__groupDarkIcon">
-                            <input class="form__fieldDarkIcon" placeholder="Nombre" type="text" id="name" name="name">
-                            <label class="form__labelDarkIcon" for="name">Nombre completo:</label>
-                            <img class="form__fieldDarkIcon__img" src="../images/imgsBtns/Icono_Search.svg" alt="icono search">
-                        </div>
-
-                        <div class="seccionFiltros__div__titulo">
-                            <p class="seccionFiltros__div__titulo__p">Año</p>
-                            <div class="seccionFiltros__div__titulo__div"></div>
-                        </div>
-
-                        <form class="seccionFiltros__div__form">
-
-                            <div class="contenedorCheckBoxNovedades">
-                                <input class="contenedorCheckBox__input" type="checkbox" id="politicaDatos"
-                                    name="politicaDatos" value="true">
-                                <label class="contenedorCheckBox__label body_1-Dark" for="politicaDatos">2022</label>
-                            </div>
-
-                            <div class="contenedorCheckBoxNovedades">
-                                <input class="contenedorCheckBox__input" type="checkbox" id="politicaDatos"
-                                    name="politicaDatos" value="true">
-                                <label class="contenedorCheckBox__label body_1-Dark" for="politicaDatos">2021</label>
-                            </div>
-
-                            <div class="contenedorCheckBoxNovedades">
-                                <input class="contenedorCheckBox__input" type="checkbox" id="politicaDatos"
-                                    name="politicaDatos" value="true">
-                                <label class="contenedorCheckBox__label body_1-Dark" for="politicaDatos">2020</label>
-                            </div>
-                        </form>
-                    </div>
-
-                    <div class="seccionFiltros__div">
-                        <div class="seccionFiltros__div__titulo">
-                            <p class="seccionFiltros__div__titulo__p">Mes</p>
-                            <div class="seccionFiltros__div__titulo__div"></div>
-                        </div>
-                        <div class="inputAreaDark">
-                            <select class="inputAreaDark__input" name="pais" id="pais">
-                                <option selected hidden>Selecciona un mes</option>
-                                <option value="01">Enero</option>
-                                <option value="02">Febrero</option>
-                                <option value="03">Marzo</option>
-                                <option value="04">Abril</option>
-                                <option value="05">Mayo</option>
-                                <option value="06">Junio</option>
-                                <option value="07">Julio</option>
-                                <option value="08">Agosto</option>
-                                <option value="09">Septiembre</option>
-                                <option value="10">Octubre</option>
-                                <option value="11">Noviembre</option>
-                                <option value="12">Diciembre</option>
-                            </select>
-                            <label class="inputAreaDark__label" for="pais">País de residencia:</label>
-                        </div>
-                    </div>
-
-                    <div class="seccionFiltros__div">
-
-                        <div class="seccionFiltros__div__titulo">
-                            <p class="seccionFiltros__div__titulo__p">Categoría</p>
-                            <div class="seccionFiltros__div__titulo__div"></div>
-                        </div>
-
-                        <form class="seccionFiltros__div__form">
-
-                            <div class="contenedorCheckBoxNovedades">
-                                <input class="contenedorCheckBox__input" type="checkbox" id="politicaDatos"
-                                    name="politicaDatos" value="true">
-                                <label class="contenedorCheckBox__label body_1-Dark"
-                                    for="politicaDatos">Finanzas</label>
-                            </div>
-
-                            <div class="contenedorCheckBoxNovedades">
-                                <input class="contenedorCheckBox__input" type="checkbox" id="politicaDatos"
-                                    name="politicaDatos" value="true">
-                                <label class="contenedorCheckBox__label body_1-Dark"
-                                    for="politicaDatos">Inversión</label>
-                            </div>
-
-                            <div class="contenedorCheckBoxNovedades">
-                                <input class="contenedorCheckBox__input" type="checkbox" id="politicaDatos"
-                                    name="politicaDatos" value="true">
-                                <label class="contenedorCheckBox__label body_1-Dark"
-                                    for="politicaDatos">Economía</label>
-                            </div>
-
-                        </form>
-                    </div>
+            <!--TÍTULO SECCIÓN-->
+            <div class="contenedorTitulo">
+                <div class="contenedor-h1">
+                    <div class="contenedor-h1__div"></div>
+                    <h2 class="contenedor-h1__h1 h2-Light">NOVEDADES</h2>
                 </div>
             </div>
 
-            <!--CARDS NOVEDADES-->
-            <div>
-                <!--CARD 1-->
-                <div class="cardNovedades">
+            <!--CONTENIDO SECCIÓN-->
+            <div class="contenedorSeccionNovedades">
 
-                    <div class="cardNovedades__div-img">
-                        <img class="cardNovedades__div-img__img" src="../images/FotosBlog/ImagenArticulo_1.png"
-                            alt="Foto finanzas">
-                        <p class="cardNovedades__div-img__p">Finanzas</p>
-                    </div>
+                <!--SECCIÓN FILTROS-->
+                <div>
+                    <div class="seccionFiltros">
 
-                    <div class="cardNovedades__div-txt">
-                        <p class="cardNovedades__div-txt__lblFecha">21 / 07 / 2022</p>
-                        <div>
-                            <p class="cardNovedades__div-txt__title">¿Cómo entender a los nuevos consumidores del sector
-                                financiero?</p>
-                            <p class="body_2 cardNovedades__div-txt__description">Como ocurre en muchas industrias, el
-                                sector financiero enfrenta un cambio importante
-                                en los hábitos de consumo de sus servicios, presionado por la transformación
-                                digital.</p>
+                        <div class="btn_filtro">
+                            <img class="btn_filtro__img" src="../images/FotosBlog/Icono_Filtro.svg" alt="Icono filtro">
+                            <h3 class="subtitle-3">FILTROS</h3>
                         </div>
-                        <div class="cardNovedades__div-txt__base">
-                            <p class="cardNovedades__div-txt__base__p">3 min</p>
-                            <a href="#" class="btnText cardCasoExito__div__a">
-                                VER MÁS
-                                <img class="btnText_Icon" src="../images/IconoFlecha_TextBtn.svg" alt="">
-                            </a>
+
+
+                        <div class="seccionFiltros__div">
+
+                            <h3 class="h3-Dark tituloFiltros">Filtrar por:</h3>
+
+                            <div class="form__groupDarkIcon">
+                                <input class="form__fieldDarkIcon" placeholder="Nombre" type="text" id="name"
+                                    name="name">
+                                <label class="form__labelDarkIcon" for="name">Nombre completo:</label>
+                                <img class="form__fieldDarkIcon__img" src="../images/imgsBtns/Icono_Search.svg"
+                                    alt="icono search">
+                            </div>
+
+                            <div class="seccionFiltros__div__titulo">
+                                <p class="seccionFiltros__div__titulo__p">Año</p>
+                                <div class="seccionFiltros__div__titulo__div"></div>
+                            </div>
+
+                            <form class="seccionFiltros__div__form">
+
+                                <div class="contenedorCheckBoxNovedades">
+                                    <input class="contenedorCheckBox__input" type="checkbox" id="politicaDatos"
+                                        name="politicaDatos" value="true">
+                                    <label class="contenedorCheckBox__label body_1-Dark"
+                                        for="politicaDatos">2022</label>
+                                </div>
+
+                                <div class="contenedorCheckBoxNovedades">
+                                    <input class="contenedorCheckBox__input" type="checkbox" id="politicaDatos"
+                                        name="politicaDatos" value="true">
+                                    <label class="contenedorCheckBox__label body_1-Dark"
+                                        for="politicaDatos">2021</label>
+                                </div>
+
+                                <div class="contenedorCheckBoxNovedades">
+                                    <input class="contenedorCheckBox__input" type="checkbox" id="politicaDatos"
+                                        name="politicaDatos" value="true">
+                                    <label class="contenedorCheckBox__label body_1-Dark"
+                                        for="politicaDatos">2020</label>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="seccionFiltros__div">
+                            <div class="seccionFiltros__div__titulo">
+                                <p class="seccionFiltros__div__titulo__p">Mes</p>
+                                <div class="seccionFiltros__div__titulo__div"></div>
+                            </div>
+                            <div class="inputAreaDark">
+                                <select class="inputAreaDark__input" name="pais" id="pais">
+                                    <option selected hidden>Selecciona un mes</option>
+                                    <option value="01">Enero</option>
+                                    <option value="02">Febrero</option>
+                                    <option value="03">Marzo</option>
+                                    <option value="04">Abril</option>
+                                    <option value="05">Mayo</option>
+                                    <option value="06">Junio</option>
+                                    <option value="07">Julio</option>
+                                    <option value="08">Agosto</option>
+                                    <option value="09">Septiembre</option>
+                                    <option value="10">Octubre</option>
+                                    <option value="11">Noviembre</option>
+                                    <option value="12">Diciembre</option>
+                                </select>
+                                <label class="inputAreaDark__label" for="pais">País de residencia:</label>
+                            </div>
+                        </div>
+
+                        <div class="seccionFiltros__div">
+
+                            <div class="seccionFiltros__div__titulo">
+                                <p class="seccionFiltros__div__titulo__p">Categoría</p>
+                                <div class="seccionFiltros__div__titulo__div"></div>
+                            </div>
+
+                            <form class="seccionFiltros__div__form">
+
+                                <div class="contenedorCheckBoxNovedades">
+                                    <input class="contenedorCheckBox__input" type="checkbox" id="politicaDatos"
+                                        name="politicaDatos" value="true">
+                                    <label class="contenedorCheckBox__label body_1-Dark"
+                                        for="politicaDatos">Finanzas</label>
+                                </div>
+
+                                <div class="contenedorCheckBoxNovedades">
+                                    <input class="contenedorCheckBox__input" type="checkbox" id="politicaDatos"
+                                        name="politicaDatos" value="true">
+                                    <label class="contenedorCheckBox__label body_1-Dark"
+                                        for="politicaDatos">Inversión</label>
+                                </div>
+
+                                <div class="contenedorCheckBoxNovedades">
+                                    <input class="contenedorCheckBox__input" type="checkbox" id="politicaDatos"
+                                        name="politicaDatos" value="true">
+                                    <label class="contenedorCheckBox__label body_1-Dark"
+                                        for="politicaDatos">Economía</label>
+                                </div>
+
+                            </form>
                         </div>
                     </div>
-
                 </div>
 
-                <!--CARD 2-->
-                <div class="cardNovedades">
+                <!--CARDS NOVEDADES-->
+                <div class="seccionCardsNovedades">
 
-                    <div class="cardNovedades__div-img">
-                        <img class="cardNovedades__div-img__img" src="../images/FotosBlog/ImagenArticulo_2.png"
-                            alt="Foto finanzas">
-                        <p class="cardNovedades__div-img__p">Economía</p>
-                    </div>
 
-                    <div class="cardNovedades__div-txt">
-                        <p class="cardNovedades__div-txt__lblFecha">15 / 07 / 2022</p>
-                        <div>
-                            <p class="cardNovedades__div-txt__title">Los 1,6 millones que llegaron a la banca en la
-                                pandemia para quedarse</p>
-                            <p class="body_2 cardNovedades__div-txt__description">En medio de cifras negativas de
-                                quiebra de empresas y comercios, de pérdida de
-                                empleos, de la caída de la productividad y el desplome económico que ha dejado la
-                                pandemia del...</p>
+                    <!--CARD 1-->
+                    <div class="cardNovedades">
+
+                        <div class="cardNovedades__div-img">
+                            <img class="cardNovedades__div-img__img" src="../images/FotosBlog/ImagenArticulo_1.png"
+                                alt="Foto finanzas">
+                            <p class="cardNovedades__div-img__p">Finanzas</p>
                         </div>
-                        <div class="cardNovedades__div-txt__base">
-                            <p class="cardNovedades__div-txt__base__p">2 min</p>
-                            <a href="#" class="btnText cardCasoExito__div__a">
-                                VER MÁS
-                                <img class="btnText_Icon" src="../images/IconoFlecha_TextBtn.svg" alt="">
-                            </a>
-                        </div>
-                    </div>
 
-                </div>
-
-                <!--CARD 3-->
-                <div class="cardNovedades">
-
-                    <div class="cardNovedades__div-img">
-                        <img class="cardNovedades__div-img__img" src="../images/FotosBlog/ImagenArticulo_3.png"
-                            alt="Foto finanzas">
-                        <p class="cardNovedades__div-img__p">Inversión</p>
-                    </div>
-
-                    <div class="cardNovedades__div-txt">
-                        <p class="cardNovedades__div-txt__lblFecha">02 / 07 / 2022</p>
-                        <div>
-                            <p class="cardNovedades__div-txt__title">Inversionistas que vendrían al país a pesar de
-                                bajada de nota de Fitch</p>
-                            <p class="body_2 cardNovedades__div-txt__description">Por cuenta de la segunda baja de nota
-                                del grado de inversión de Colombia de la
-                                calificadora Fitch Ratings, tras la de Standard & Poor’s, entre $5,7 y $7,7 billones
-                                en inversiones de títulos de deu...</p>
-                        </div>
-                        <div class="cardNovedades__div-txt__base">
-                            <p class="cardNovedades__div-txt__base__p">4 min</p>
-                            <a href="#" class="btnText cardCasoExito__div__a">
-                                VER MÁS
-                                <img class="btnText_Icon" src="../images/IconoFlecha_TextBtn.svg" alt="">
-                            </a>
+                        <div class="cardNovedades__div-txt">
+                            <p class="cardNovedades__div-txt__lblFecha">21 / 07 / 2022</p>
+                            <div>
+                                <p class="cardNovedades__div-txt__title">¿Cómo entender a los nuevos consumidores del
+                                    sector
+                                    financiero?</p>
+                                <p class="body_2 cardNovedades__div-txt__description">Como ocurre en muchas industrias,
+                                    el
+                                    sector financiero enfrenta un cambio importante
+                                    en los hábitos de consumo de sus servicios, presionado por la transformación
+                                    digital.</p>
+                            </div>
+                            <div class="cardNovedades__div-txt__base">
+                                <p class="cardNovedades__div-txt__base__p">3 min</p>
+                                <a href="#" class="btnText cardCasoExito__div__a">
+                                    VER MÁS
+                                    <img class="btnText_Icon" src="../images/IconoFlecha_TextBtn.svg" alt="">
+                                </a>
+                            </div>
                         </div>
                     </div>
+                    <!--CARD 2-->
+                    <div class="cardNovedades">
+
+                        <div class="cardNovedades__div-img">
+                            <img class="cardNovedades__div-img__img" src="../images/FotosBlog/ImagenArticulo_2.png"
+                                alt="Foto finanzas">
+                            <p class="cardNovedades__div-img__p">Economía</p>
+                        </div>
+
+                        <div class="cardNovedades__div-txt">
+                            <p class="cardNovedades__div-txt__lblFecha">15 / 07 / 2022</p>
+                            <div>
+                                <p class="cardNovedades__div-txt__title">Los 1,6 millones que llegaron a la banca en la
+                                    pandemia para quedarse</p>
+                                <p class="body_2 cardNovedades__div-txt__description">En medio de cifras negativas de
+                                    quiebra de empresas y comercios, de pérdida de
+                                    empleos, de la caída de la productividad y el desplome económico que ha dejado la
+                                    pandemia del...</p>
+                            </div>
+                            <div class="cardNovedades__div-txt__base">
+                                <p class="cardNovedades__div-txt__base__p">2 min</p>
+                                <a href="#" class="btnText cardCasoExito__div__a">
+                                    VER MÁS
+                                    <img class="btnText_Icon" src="../images/IconoFlecha_TextBtn.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--CARD 3-->
+                    <div class="cardNovedades">
+
+                        <div class="cardNovedades__div-img">
+                            <img class="cardNovedades__div-img__img" src="../images/FotosBlog/ImagenArticulo_3.png"
+                                alt="Foto finanzas">
+                            <p class="cardNovedades__div-img__p">Inversión</p>
+                        </div>
+
+                        <div class="cardNovedades__div-txt">
+                            <p class="cardNovedades__div-txt__lblFecha">02 / 07 / 2022</p>
+                            <div>
+                                <p class="cardNovedades__div-txt__title">Inversionistas que vendrían al país a pesar de
+                                    bajada de nota de Fitch</p>
+                                <p class="body_2 cardNovedades__div-txt__description">Por cuenta de la segunda baja de
+                                    nota
+                                    del grado de inversión de Colombia de la
+                                    calificadora Fitch Ratings, tras la de Standard & Poor’s, entre $5,7 y $7,7 billones
+                                    en inversiones de títulos de deu...</p>
+                            </div>
+                            <div class="cardNovedades__div-txt__base">
+                                <p class="cardNovedades__div-txt__base__p">4 min</p>
+                                <a href="#" class="btnText cardCasoExito__div__a">
+                                    VER MÁS
+                                    <img class="btnText_Icon" src="../images/IconoFlecha_TextBtn.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
 
                 </div>
 
             </div>
 
-        </div>
+        </section>
 
-    </section>
+    </main>
 
     <!--FOOTER-->
     <footer>
@@ -382,6 +350,60 @@
         <p class="footer__p">© 2022 BtoB Negocios. Todos los derechos reservados</p>
 
     </footer>
+
+    <!--HEADER MENÚ PRINCIPAL-->
+    <header>
+        <nav class="header__nav">
+
+            <!--LOGO EMPRESA MENÚ-->
+            <a href="../index.html">
+                <img src="../images/logoBtoB.svg" alt="Logo BtoB Negocios">
+            </a>
+
+            <!--ICONO MENÚ (MOBILE)-->
+
+            <input type="checkbox" id="btn_Menu">
+            <label for="btn_Menu" class="lbl_Menu">
+                <span id="top"></span>
+                <span id="medio"></span>
+                <span id="bottom"></span>
+            </label>
+
+
+            <!--OPCIONES MENÚ-->
+            <ul class="header__nav_ul">
+                <li class="header__nav_ul__li">
+                    <a href="../index.html" class="header__nav_ul__li__a">
+                        INICIO
+                    </a>
+                </li>
+
+                <li class="header__nav_ul__li">
+                    <a href="./nosotros.html" class="header__nav_ul__li__a">
+                        NOSOTROS
+                    </a>
+                </li>
+
+                <li class="header__nav_ul__li">
+                    <a href="./casosDeExito.html" class="header__nav_ul__li__a">
+                        CASOS DE ÉXITO
+                    </a>
+                </li>
+
+                <li class="header__nav_ul__li">
+                    <a href="./novedades.html" class="header__nav_ul__li__a  seleccionado">
+                        NOVEDADES
+                    </a>
+                </li>
+
+                <li class="header__nav_ul__li-Btn">
+                    <a href="./contacto.html">
+                        <button class="btnStroke_Light">CONTÁCTANOS</button>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
 </body>
 

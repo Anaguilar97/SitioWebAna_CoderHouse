@@ -22,6 +22,10 @@ body {
   grid-template-rows: auto auto auto;
 }
 
+header {
+  position: fixed;
+}
+
 /*-----------------------TIPOGRAFÍAS-----------------------*/
 .h2-Light {
   font-family: "Inter", sans-serif;
@@ -68,6 +72,15 @@ body {
   font-size: 14px;
   letter-spacing: 0.0015em;
   color: #1D343E;
+}
+
+.subtitle-3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1.25px;
+  color: #FFFFFF;
+  margin: 0px;
 }
 
 .body_1 {
@@ -313,6 +326,8 @@ header {
   background-color: #FFFFFF;
   width: 100%;
   box-shadow: 0px 4px 8px rgba(29, 52, 62, 0.16);
+  /*position: sticky;
+  top: 0px;*/
 }
 
 .header__nav {
@@ -432,7 +447,7 @@ footer {
   align-items: center;
   justify-content: center;
   position: relative;
-  margin: 0px 0px 96px 0px;
+  margin: 96px 0px 96px 0px;
 }
 
 .sectionBanner__h1 {
@@ -763,7 +778,7 @@ footer {
   }
   /*-----------------------BANNER INICIAL-----------------------*/
   .sectionBanner {
-    margin: 0px 0px 64px 0px;
+    margin: 96px 0px 64px 0px;
   }
   .sectionBanner__h1 {
     font-size: 32px;
@@ -858,6 +873,9 @@ footer {
     left: 0;
   }
   /*-----------------------BANNER INICIAL-----------------------*/
+  .sectionBanner {
+    margin: 80px 0px 64px 0px;
+  }
   .sectionBanner__h1 {
     font-size: 24px;
     width: 90%;
@@ -1544,9 +1562,16 @@ footer {
 }
 
 /*-----------------------CARDS NOVEDADES-----------------------*/
+.seccionCardsNovedades {
+  margin: 0px 0px 0px 24px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
 .cardNovedades {
   background-color: #FFFFFF;
-  width: 760px;
+  width: 100%;
   display: flex;
   align-items: center;
   margin: 0px 0px 48px 0px;
@@ -1577,7 +1602,6 @@ footer {
 
 .cardNovedades__div-txt {
   padding: 0px 24px 0px 24px;
-  height: auto;
 }
 
 .cardNovedades__div-txt__lblFecha {
@@ -1586,6 +1610,7 @@ footer {
   font-size: 12px;
   color: #969696;
   margin: 0px 0px 8px 0px;
+  top: 16px;
 }
 
 .cardNovedades__div-txt__title {
@@ -1626,6 +1651,20 @@ footer {
 }
 
 /*-----------------------SECCIÓN FILTROS-----------------------*/
+.btn_filtro {
+  width: 100%;
+  display: none;
+  align-items: center;
+  padding: 16px;
+}
+.btn_filtro:focus ~ .seccionFiltros__div {
+  display: block;
+}
+
+.btn_filtro__img {
+  margin: 0px 16px 0px 0px;
+}
+
 .seccionFiltros {
   background-color: #1D343E;
   width: 360px;
@@ -1636,7 +1675,6 @@ footer {
 }
 
 .tituloFiltros {
-  width: 80%;
   margin: 32px 0px 32px 0px;
 }
 
@@ -1672,9 +1710,14 @@ footer {
 @media (max-width: 1430px) {
   /*-----------------------SECCIÓN FILTROS-----------------------*/
   .seccionFiltros {
-    display: none;
+    padding: 0px;
+    margin: 0px 0px 32px 0px;
+    width: 100%;
   }
-  .formBusqueda {
+  .btn_filtro {
+    display: flex;
+  }
+  .seccionFiltros__div {
     display: none;
   }
   /*-----------------------CONTENEDOR SECCIÓN NOVEDADES-----------------------*/
@@ -1684,6 +1727,10 @@ footer {
     justify-content: space-between;
   }
   /*-----------------------CARDS NOVEDADES-----------------------*/
+  .seccionCardsNovedades {
+    margin: 0px;
+    width: 100%;
+  }
   .cardNovedades {
     background-color: #FFFFFF;
     width: 100%;
@@ -1700,6 +1747,9 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     width: 90%;
+  }
+  .cardNovedades__div-txt {
+    padding: 0px 8px 0px 8px;
   }
 }
 /*-----------------------MOBILE-----------------------*/

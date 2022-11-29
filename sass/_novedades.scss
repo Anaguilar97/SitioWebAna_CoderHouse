@@ -15,9 +15,16 @@
 }
 
 /*-----------------------CARDS NOVEDADES-----------------------*/
+.seccionCardsNovedades{
+    margin: 0px 0px 0px 24px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
 .cardNovedades {
     background-color: #FFFFFF;
-    width: 760px;
+    width: 100%;
     display: flex;
     align-items: center;
     margin: 0px 0px 48px 0px;
@@ -48,7 +55,6 @@
 
 .cardNovedades__div-txt {
     padding: 0px 24px 0px 24px;
-    height: auto;
 }
 
 .cardNovedades__div-txt__lblFecha {
@@ -57,6 +63,7 @@
     font-size: 12px;
     color: #969696;
     margin: 0px 0px 8px 0px;
+    top: 16px;
 }
 
 .cardNovedades__div-txt__title {
@@ -97,6 +104,21 @@
 }
 
 /*-----------------------SECCIÓN FILTROS-----------------------*/
+.btn_filtro{
+    width: 100%;
+    display: none;
+    align-items: center;
+    padding: 16px;
+
+    &:focus~.seccionFiltros__div{
+        display: block;
+    }
+}
+
+.btn_filtro__img{
+    margin: 0px 16px 0px 0px;
+}
+
 .seccionFiltros {
     background-color: #1D343E;
     width: 360px;
@@ -107,7 +129,6 @@
 }
 
 .tituloFiltros {
-    width: 80%;
     margin: 32px 0px 32px 0px;
 }
 
@@ -143,11 +164,17 @@
 @media (max-width: 1430px) {
 
     /*-----------------------SECCIÓN FILTROS-----------------------*/
-    .seccionFiltros {
-        display: none;
+    .seccionFiltros{
+        padding: 0px;
+        margin: 0px 0px 32px 0px;
+        width: 100%;
     }
 
-    .formBusqueda {
+    .btn_filtro{
+        display: flex;
+    }
+
+    .seccionFiltros__div{
         display: none;
     }
 
@@ -159,6 +186,11 @@
     }
 
     /*-----------------------CARDS NOVEDADES-----------------------*/
+    .seccionCardsNovedades{
+        margin: 0px;
+        width: 100%;
+    }
+
     .cardNovedades {
         background-color: #FFFFFF;
         width: 100%;
@@ -178,6 +210,10 @@
         flex-direction: column;
         justify-content: space-between;
         width: 90%;
+    }
+
+    .cardNovedades__div-txt {
+        padding: 0px 8px 0px 8px;
     }
 }
 

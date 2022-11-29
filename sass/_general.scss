@@ -21,6 +21,10 @@ body {
     grid-template-rows: auto auto auto;
 }
 
+header{
+    position: fixed;
+}
+
 /*-----------------------TIPOGRAFÍAS-----------------------*/
 .h2-Light {
     font-family: "Inter", sans-serif;
@@ -67,6 +71,15 @@ body {
     font-size: 14px;
     letter-spacing: 0.0015em;
     color: #1D343E;
+}
+
+.subtitle-3{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1.25px;
+    color: #FFFFFF;
+    margin: 0px;
 }
 
 .body_1 {
@@ -323,6 +336,8 @@ header {
     background-color: #FFFFFF;
     width: 100%;
     box-shadow: 0px 4px 8px rgba(29, 52, 62, 0.16);
+    /*position: sticky;
+    top: 0px;*/
 }
 
 .header__nav {
@@ -443,7 +458,7 @@ footer {
     align-items: center;
     justify-content: center;
     position: relative;
-    margin: 0px 0px 96px 0px;
+    margin: 96px 0px 96px 0px;
 }
 
 .sectionBanner__h1 {
@@ -785,7 +800,7 @@ footer {
 
     /*-----------------------BANNER INICIAL-----------------------*/
     .sectionBanner {
-        margin: 0px 0px 64px 0px;
+        margin: 96px 0px 64px 0px;
     }
 
     .sectionBanner__h1 {
@@ -904,6 +919,10 @@ footer {
     }
 
     /*-----------------------BANNER INICIAL-----------------------*/
+    .sectionBanner {
+        margin: 80px 0px 64px 0px;
+    }
+
     .sectionBanner__h1 {
         font-size: 24px;
         width: 90%;
