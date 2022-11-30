@@ -21,7 +21,7 @@ body {
     grid-template-rows: auto auto auto;
 }
 
-header{
+header {
     position: fixed;
 }
 
@@ -73,7 +73,7 @@ header{
     color: #1D343E;
 }
 
-.subtitle-3{
+.subtitle-3 {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     font-size: 18px;
@@ -537,7 +537,6 @@ footer {
     font-size: 16px;
     left: 16px;
     top: 2px;
-
     position: absolute;
     display: block;
     transition: 0.2s;
@@ -585,17 +584,7 @@ footer {
     color: #454545;
     padding: 7px 0px 8px 16px;
     background: transparent;
-    transition: border-color ease-in-out 0.5s;
-}
-
-.form__field__desplegable::placeholder {
-    color: transparent;
-}
-
-.form__field__desplegable:placeholder-shown~.form__label__desplegable {
-    font-size: 17px;
-    cursor: text;
-    top: 12px;
+    transition: border-color ease-in-out 0.2s;
 }
 
 .form__label__desplegable {
@@ -606,7 +595,7 @@ footer {
     top: 2px;
     position: absolute;
     display: block;
-    transition: 1s ease-out;
+    transition: 0.2s;
     color: #969696;
     pointer-events: none;
 }
@@ -623,15 +612,15 @@ footer {
     position: absolute;
     top: 2px;
     display: block;
-    transition: ease-in-out 0.2s;
+    transition: 0.2s;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 12px;
     color: #1D343E;
 }
 
-/*-----------------------INPUTS DARK-----------------------*/
-.inputAreaDark {
+/*-----------------------INPUTS SELECT DARK-----------------------*/
+.form__group__desplegableDark {
     position: relative;
     width: 100%;
     height: 48px;
@@ -639,7 +628,7 @@ footer {
     margin: 0px 0px 24px 0px;
 }
 
-.inputAreaDark__input {
+.form__field__desplegableDark {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 200;
@@ -654,12 +643,12 @@ footer {
     transition: border-color 0.2s;
 }
 
-.inputAreaDark__label {
+.form__label__desplegableDark {
     font-family: "Inter", sans-serif;
     font-weight: 600;
     font-size: 16px;
     left: 16px;
-    bottom: 12px;
+    top: 2px;
     position: absolute;
     display: block;
     transition: 0.2s;
@@ -667,12 +656,12 @@ footer {
     pointer-events: none;
 }
 
-.inputAreaDark__input:focus {
+.form__field__desplegableDark:focus {
     border-bottom: solid 2px #DBB100;
     color: #454545;
 }
 
-.inputAreaDark__input:focus~.inputAreaDark__label {
+.form__field__desplegableDark:focus~.form__label__desplegableDark {
     position: absolute;
     top: 2px;
     left: 8px;
