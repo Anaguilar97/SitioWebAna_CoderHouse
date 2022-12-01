@@ -1113,7 +1113,7 @@ footer {
 .cardCasoExito__resalto {
   width: 0%;
   height: 4px;
-  background: #C19C00;
+  background-color: #C19C00;
   position: absolute;
   bottom: 0px;
 }
@@ -1422,13 +1422,31 @@ footer {
 
 /*-----------------------SECCIÓN EQUIPO - CARDS-----------------------*/
 .cardEquipoHome {
-  width: fit-content;
+  width: 90%;
   height: auto;
   background-color: #FFFFFF;
 }
 
+.cardEquipoHome_center {
+  display: flex;
+  justify-content: center;
+}
+
+.cardEquipoHome_right {
+  display: flex;
+  justify-content: right;
+}
+
+.cardEquipoHome_mobile_R {
+  display: flex;
+}
+
+.cardEquipoHome_mobile_L {
+  display: flex;
+}
+
 .cardEquipoHome__img {
-  width: 220px;
+  width: 100%;
   height: auto;
 }
 
@@ -1502,12 +1520,8 @@ footer {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
-  /*-----------------------SECCIÓN EQUIPO - CARDS-----------------------*/
   .cardEquipoHome {
-    width: 157px;
-  }
-  .cardEquipoHome__img {
-    width: 157px;
+    margin: 0px 0px 24px 0px;
   }
 }
 /*-----------------------MOBILE-----------------------*/
@@ -1533,6 +1547,9 @@ footer {
   /*-----------------------SECCIÓN SOLUCIONES-----------------------*/
   .marginCardsSolucion {
     margin: 0px 0px 52px 0px;
+  }
+  .cardEquipoHome__div {
+    padding: 16px 8px 16px 8px;
   }
 }
 /*-----------------------BANNER INICIAL-----------------------*/

@@ -2,7 +2,6 @@
 .sectionBanner_home {
     position: absolute;
     width: 70%;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,7 +13,6 @@
     padding: 24px 40px 24px 40px;
     text-align: center;
     width: fit-content;
-
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
@@ -24,14 +22,12 @@
 
 .subtitulo_home {
     text-align: center;
-
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: 42px;
     line-height: 51px;
     color: #FFFFFF;
-
     margin: 8px 0px 64px 0px;
 }
 
@@ -116,13 +112,31 @@
 
 /*-----------------------SECCIÓN EQUIPO - CARDS-----------------------*/
 .cardEquipoHome {
-    width: fit-content;
+    width: 90%;
     height: auto;
     background-color: #FFFFFF;
 }
 
+.cardEquipoHome_center{
+    display: flex;
+    justify-content: center;
+}
+
+.cardEquipoHome_right{
+    display: flex;
+    justify-content: right;
+}
+
+.cardEquipoHome_mobile_R{
+    display: flex;
+}
+
+.cardEquipoHome_mobile_L{
+    display: flex;
+}
+
 .cardEquipoHome__img {
-    width: 220px;
+    width: 100%;
     height: auto;
 }
 
@@ -209,15 +223,10 @@
         grid-template-rows: 1fr 1fr;
     }
 
-    /*-----------------------SECCIÓN EQUIPO - CARDS-----------------------*/
     .cardEquipoHome {
-        width: 157px;
+        margin: 0px 0px 24px 0px;
     }
-
-    .cardEquipoHome__img {
-        width: 157px;
-    }
-
+    
 }
 
 /*-----------------------MOBILE-----------------------*/
@@ -248,5 +257,9 @@
     /*-----------------------SECCIÓN SOLUCIONES-----------------------*/
     .marginCardsSolucion {
         margin: 0px 0px 52px 0px;
+    }
+
+    .cardEquipoHome__div {
+        padding: 16px 8px 16px 8px;
     }
 }
