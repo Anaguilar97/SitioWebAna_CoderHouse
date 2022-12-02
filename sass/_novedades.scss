@@ -1,27 +1,21 @@
-/*-----------------------BANNER INICIAL-----------------------*/
 .imgFondoBannerNovedades {
     width: 100%;
     height: 400px;
     background-image: url("../images/imagenesBanners/imagenBanner_Actualidad.png");
     background-position: bottom;
 }
-
-/*-----------------------CONTENEDOR SECCIÓN NOVEDADES-----------------------*/
 .contenedorSeccionNovedades {
     display: flex;
     justify-content: space-between;
     width: 80%;
     margin: 0px;
 }
-
-/*-----------------------CARDS NOVEDADES-----------------------*/
 .seccionCardsNovedades{
     margin: 0px 0px 0px 24px;
     width: 70%;
     display: flex;
     flex-direction: column;
 }
-
 .cardNovedades {
     background-color: #FFFFFF;
     width: 100%;
@@ -29,17 +23,14 @@
     align-items: center;
     margin: 0px 0px 48px 0px;
 }
-
 .cardNovedades__div-img {
     position: relative;
     width: auto;
 }
-
 .cardNovedades__div-img__img {
     width: auto;
     height: auto;
 }
-
 .cardNovedades__div-img__p {
     position: absolute;
     top: 0px;
@@ -52,11 +43,9 @@
     color: #FFFFFF;
     background-color: #C19C00;
 }
-
 .cardNovedades__div-txt {
     padding: 0px 24px 0px 24px;
 }
-
 .cardNovedades__div-txt__lblFecha {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -65,7 +54,6 @@
     margin: 0px 0px 8px 0px;
     top: 16px;
 }
-
 .cardNovedades__div-txt__title {
     font-family: "Inter", sans-serif;
     font-weight: 600;
@@ -73,17 +61,14 @@
     color: #1D343E;
     margin: 0px 0px 8px 0px;
 }
-
 .cardNovedades__div-txt__description {
     margin: 0px 0px 8px 0px;
 }
-
 .cardNovedades__div-txt__base {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
 .cardNovedades__div-txt__base__p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -91,8 +76,6 @@
     color: #969696;
     margin: 0px;
 }
-
-/*-----------------------SECCIÓN BUSQUEDA-----------------------*/
 .formBusqueda {
     background-color: #1D343E;
     width: 360px;
@@ -102,23 +85,18 @@
     align-items: center;
     margin: 0px 0px 24px 0px;
 }
-
-/*-----------------------SECCIÓN FILTROS-----------------------*/
 .btn_filtro{
     width: 100%;
     display: none;
     align-items: center;
     padding: 16px;
-
     &:focus~.seccionFiltros__div{
         display: block;
     }
 }
-
 .btn_filtro__img{
     margin: 0px 16px 0px 0px;
 }
-
 .seccionFiltros {
     background-color: #1D343E;
     width: 360px;
@@ -127,20 +105,16 @@
     align-items: center;
     padding: 0px 0px 48px 0px;
 }
-
 .tituloFiltros {
     margin: 32px 0px 32px 0px;
 }
-
 .seccionFiltros__div {
     width: 80%;
 }
-
 .seccionFiltros__div__titulo {
     border-bottom: #969696 solid 2px;
     margin: 32px 0px 16px 0px;
 }
-
 .seccionFiltros__div__titulo__p {
     font-family: "Inter", sans-serif;
     font-weight: 600;
@@ -148,49 +122,37 @@
     color: #969696;
     margin: 0px 0px 4px 0px;
 }
-
 .seccionFiltros__div__form {
     display: flex;
     flex-direction: column;
     justify-content: left;
 }
-
 .contenedorCheckBoxNovedades {
     display: flex;
     align-items: center;
     margin: 0px 0px 16px 0px;
 }
-
 @media (max-width: 1430px) {
-
-    /*-----------------------SECCIÓN FILTROS-----------------------*/
     .seccionFiltros{
         padding: 0px;
         margin: 0px 0px 32px 0px;
         width: 100%;
     }
-
     .btn_filtro{
         display: flex;
     }
-
     .seccionFiltros__div{
         display: none;
     }
-
-    /*-----------------------CONTENEDOR SECCIÓN NOVEDADES-----------------------*/
     .contenedorSeccionNovedades {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
-
-    /*-----------------------CARDS NOVEDADES-----------------------*/
     .seccionCardsNovedades{
         margin: 0px;
         width: 100%;
     }
-
     .cardNovedades {
         background-color: #FFFFFF;
         width: 100%;
@@ -198,56 +160,40 @@
         align-items: center;
         margin: 0px 0px 48px 0px;
     }
-
 }
-
-/*-----------------------TABLET-----------------------*/
 @media (max-width: 1024px) {
-
-    /*-----------------------CONTENEDOR SECCIÓN NOVEDADES-----------------------*/
     .contenedorSeccionNovedades {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         width: 90%;
     }
-
     .cardNovedades__div-txt {
         padding: 0px 8px 0px 8px;
     }
 }
-
-/*-----------------------MOBILE-----------------------*/
 @media (max-width: 768px) {
-
-    /*-----------------------BANNER INICIAL-----------------------*/
     .imgFondoBannerNovedades {
         width: 100%;
         height: 248px;
         background-image: url("../images/imagenesBanners/imagenBanner_Actualidad_Mobile.png");
         background-position: bottom;
     }
-
-    /*-----------------------CARDS NOVEDADES-----------------------*/
     .cardNovedades {
         display: flex;
         width: 100%;
         flex-direction: column;
         align-items: center;
     }
-
     .cardNovedades__div-img {
         width: 100%;
         height: auto;
     }
-
     .cardNovedades__div-img__img {
         width: 100%;
         height: auto;
     }
-
     .cardNovedades__div-txt {
         padding: 24px;
     }
-
 }

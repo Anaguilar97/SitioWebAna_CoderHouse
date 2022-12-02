@@ -26,7 +26,6 @@ header {
   position: fixed;
 }
 
-/*-----------------------TIPOGRAFÍAS-----------------------*/
 .h2-Light {
   font-family: "Inter", sans-serif;
   font-weight: 600;
@@ -136,7 +135,6 @@ header {
   text-decoration-line: underline;
 }
 
-/*-----------------------TÍTULOS SECCIONES-----------------------*/
 .contenedorTitulo {
   width: 80%;
   margin: 0px 0px 72px 0px;
@@ -174,7 +172,6 @@ header {
   z-index: 0;
 }
 
-/*-----------------------BOTÓN SECUNDARIO-----------------------*/
 .btnStroke_Light {
   background-color: transparent;
   border: #c19c00 solid 3px;
@@ -199,7 +196,6 @@ header {
   transition: all 150ms ease;
 }
 
-/*-----------------------BOTÓN PRIMARIO-----------------------*/
 .btnPrimario_Light {
   background-color: #c19c00;
   width: 152px;
@@ -223,7 +219,6 @@ header {
   transition: all 150ms ease;
 }
 
-/*-----------------------BOTÓN VER MÁS-----------------------*/
 .btnText {
   text-decoration: none;
   font-family: "Montserrat";
@@ -254,7 +249,6 @@ header {
   filter: invert(51%) sepia(89%) saturate(956%) hue-rotate(19deg) brightness(97%) contrast(101%);
 }
 
-/*-----------------------BOTÓN SCROLLDOWN-----------------------*/
 .btn_scrollDown {
   background-color: transparent;
   border: 0px;
@@ -264,7 +258,6 @@ header {
   transition: all 150ms linear;
 }
 
-/*-----------------------ICONO MENÚ HAMBUERGUESA-----------------------*/
 .header__nav__div {
   height: 32px;
 }
@@ -321,13 +314,10 @@ header {
   transition: 500ms;
 }
 
-/*-----------------------MENÚ PRINCIPAL-----------------------*/
 header {
   background-color: #FFFFFF;
   width: 100%;
   box-shadow: 0px 4px 8px rgba(29, 52, 62, 0.16);
-  /*position: sticky;
-  top: 0px;*/
 }
 
 .header__nav {
@@ -377,7 +367,6 @@ header {
   margin-left: 16px;
 }
 
-/*-----------------------FOOTER-----------------------*/
 footer {
   background-color: #FFFFFF;
   width: 100%;
@@ -440,7 +429,6 @@ footer {
   color: #C19C00;
 }
 
-/*-----------------------BANNERS INICIALES-----------------------*/
 .sectionBanner {
   width: 100%;
   display: flex;
@@ -461,7 +449,6 @@ footer {
   margin: 0px;
 }
 
-/*-----------------------CONTENEDORES SECCIONES-----------------------*/
 .contenedorSeccion {
   width: 100%;
   position: relative;
@@ -485,7 +472,6 @@ footer {
   margin: 0px 0px 96px 0px;
 }
 
-/*-----------------------INPUTS-----------------------*/
 .form__group {
   position: relative;
   padding: 20px 0px 0px 0px;
@@ -551,7 +537,6 @@ footer {
   color: #1D343E;
 }
 
-/*-----------------------INPUTS SELECT-----------------------*/
 .form__group__desplegable {
   position: relative;
   padding: 11px 0px 0px 0px;
@@ -607,7 +592,6 @@ footer {
   color: #1D343E;
 }
 
-/*-----------------------INPUTS SELECT DARK-----------------------*/
 .form__group__desplegableDark {
   position: relative;
   width: 100%;
@@ -661,7 +645,6 @@ footer {
   color: #DBB100;
 }
 
-/*-----------------------INPUTS DARK - ICONO-----------------------*/
 .form__groupDarkIcon {
   position: relative;
   padding: 20px 0px 0px 0px;
@@ -740,9 +723,7 @@ footer {
   filter: invert(55%) sepia(97%) saturate(849%) hue-rotate(15deg) brightness(103%) contrast(103%);
 }
 
-/*-----------------------TABLET-----------------------*/
 @media (max-width: 1024px) {
-  /*----------------------TITULOS-----------------------*/
   .h2-Light {
     font-size: 28px;
   }
@@ -753,7 +734,6 @@ footer {
     width: 90%;
     margin: 0px 0px 48px 0px;
   }
-  /*-----------------------MENÚ PRINCIPAL-----------------------*/
   .header__nav_ul__li__a {
     font-size: 12px;
   }
@@ -766,7 +746,6 @@ footer {
   .header__nav {
     margin: 0px 40px 0px 40px;
   }
-  /*-----------------------BANNER INICIAL-----------------------*/
   .sectionBanner {
     margin: 96px 0px 64px 0px;
   }
@@ -774,7 +753,6 @@ footer {
     font-size: 32px;
     width: 90%;
   }
-  /*-----------------------FOOTER-----------------------*/
   footer {
     padding: 24px 0px 24px 0px;
   }
@@ -803,12 +781,10 @@ footer {
     align-items: flex-start;
   }
 }
-/*-----------------------MOBILE-----------------------*/
 @media (max-width: 768px) {
   .body_2-mobile {
     font-size: 12px;
   }
-  /*----------------------TITULOS-----------------------*/
   .h2-Light {
     font-size: 24px;
   }
@@ -822,7 +798,6 @@ footer {
   .contenerdorCards {
     width: 90%;
   }
-  /*-----------------------MENÚ PRINCIPAL-----------------------*/
   .header__nav {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -862,7 +837,6 @@ footer {
   #btn_Menu:checked ~ .header__nav_ul {
     left: 0;
   }
-  /*-----------------------BANNER INICIAL-----------------------*/
   .sectionBanner {
     margin: 80px 0px 64px 0px;
   }
@@ -870,7 +844,6 @@ footer {
     font-size: 24px;
     width: 90%;
   }
-  /*-----------------------TIPOGRAFÍAS-----------------------*/
   .h3-Dark {
     font-size: 20px;
   }
@@ -878,7 +851,6 @@ footer {
     font-size: 14px;
   }
 }
-/*-----------------------BANNER INICIAL-----------------------*/
 .imgFondoBannerNosotros {
   width: 100%;
   height: 400px;
@@ -886,7 +858,6 @@ footer {
   background-position: bottom;
 }
 
-/*-----------------------SECCIÓN QUIÉNES SOMOS-----------------------*/
 .contenerdorDescripación {
   width: 80%;
   display: flex;
@@ -904,7 +875,6 @@ footer {
   padding: 0;
 }
 
-/*-----------------------SECCIÓN NUESTRO PROCESO-----------------------*/
 .contenerdorCards {
   width: 80%;
   display: flex;
@@ -912,7 +882,6 @@ footer {
   justify-content: space-between;
 }
 
-/*-----------------------SECCIÓN NUESTRO PROCESO - CARDS-----------------------*/
 .cardProceso {
   height: 340px;
   width: 361px;
@@ -977,7 +946,6 @@ footer {
   transition: all 200ms ease;
 }
 
-/*-----------------------SECCIÓN NUESTRO EQUIPO - CARDS-----------------------*/
 .paddingSeccion {
   padding: 80px 0px 136px 0px;
 }
@@ -994,7 +962,6 @@ footer {
   margin: 32px 24px 32px 24px;
 }
 
-/*-----------------------TABLET-----------------------*/
 @media (max-width: 1024px) {
   .contenedorSeccion {
     width: 100%;
@@ -1021,7 +988,6 @@ footer {
     align-items: center;
     justify-content: space-between;
   }
-  /*-----------------------SECCIÓN QUIÉNES SOMOS-----------------------*/
   .contenerdorDescripación {
     width: 90%;
     display: block;
@@ -1036,28 +1002,23 @@ footer {
     margin: 16px 0px 0px 0px;
     padding: 0;
   }
-  /*-----------------------SECCIÓN NUESTRO PROCESO-----------------------*/
   .cardProceso {
     height: auto;
     width: 100%;
     padding: 0px;
     margin: 0px 0px 16px 0px;
   }
-  /*-----------------------SECCIÓN NUESTRO EQUIPO-----------------------*/
   .cardEquipoNosotros {
     width: 100%;
   }
 }
-/*-----------------------MOBILE-----------------------*/
 @media (max-width: 768px) {
-  /*-----------------------BANNER INICIAL-----------------------*/
   .imgFondoBannerNosotros {
     width: 100%;
     height: 248px;
     background-image: url("../images/imagenesBanners/imagenBanner_Nosotros_Mobile.png");
     background-position: bottom;
   }
-  /*-----------------------SECCIÓN NUESTRO EQUIPO-----------------------*/
   .cardEquipoNosotros__img {
     width: 141px;
     height: 211px;
@@ -1071,7 +1032,6 @@ footer {
     margin: 16px;
   }
 }
-/*-----------------------BANNER INICIAL-----------------------*/
 .imgFondoBannerCasosExito {
   width: 100%;
   height: 400px;
@@ -1079,7 +1039,6 @@ footer {
   background-position: bottom;
 }
 
-/*-----------------------SECCIÓN CASOS DESTACADOS-----------------------*/
 .cardCasoExito {
   background-color: #FFFFFF;
   width: 361px;
@@ -1127,16 +1086,13 @@ footer {
   width: 80%;
 }
 
-/*-----------------------MOBILE-----------------------*/
 @media (max-width: 953px) {
-  /*-----------------------BANNER INICIAL-----------------------*/
   .imgFondoBannerCasosExito {
     width: 100%;
     height: 248px;
     background-image: url("../images/imagenesBanners/imagenBanner_CasosExito_Mobile.png");
     background-position: bottom;
   }
-  /*-----------------------CARDS CASOS DESTACADOS-----------------------*/
   .cardCasoExito {
     width: 100%;
     margin: 0px 0px 40px 0px;
@@ -1148,7 +1104,6 @@ footer {
     width: 90%;
   }
 }
-/*-----------------------BANNER INICIAL-----------------------*/
 .imgFondoBannerContacto {
   width: 100%;
   height: 400px;
@@ -1156,14 +1111,12 @@ footer {
   background-position: bottom;
 }
 
-/*-----------------------SECCIÓN CONTACTO-----------------------*/
 .seccionContacto {
   width: 80%;
   height: fit-content;
   position: relative;
 }
 
-/*-----------------------SECCIÓN INFORMACIÓN-----------------------*/
 .seccionInfo {
   background-color: #1D343E;
   width: 58%;
@@ -1207,7 +1160,6 @@ footer {
   color: #FFFFFF;
 }
 
-/*-----------------------SECCIÓN FORMULARIO-----------------------*/
 .seccionFormulario {
   width: 50%;
   background-color: #FFFFFF;
@@ -1222,7 +1174,6 @@ footer {
   flex-direction: column;
 }
 
-/*-----------------------SECCIÓN FORMULARIO - CHECKBOX-----------------------*/
 .contenedorCheckBox {
   display: flex;
   align-items: center;
@@ -1238,7 +1189,6 @@ footer {
   height: 16px;
 }
 
-/*-----------------------SECCIÓN FORMULARIO - BOTONES-----------------------*/
 .contenedorBotones {
   display: flex;
   justify-content: space-between;
@@ -1256,11 +1206,9 @@ footer {
 }
 
 @media (max-width: 1024px) {
-  /*-----------------------SECCIÓN CONTACTO-----------------------*/
   .seccionContacto {
     height: 1100px;
   }
-  /*-----------------------SECCIÓN INFORMACIÓN-----------------------*/
   .seccionInfo {
     width: 100%;
     padding: 40px 40px 80px 40px;
@@ -1268,7 +1216,6 @@ footer {
   .seccionInfo__div {
     width: 90%;
   }
-  /*-----------------------SECCIÓN FORMULARIO-----------------------*/
   .seccionFormulario {
     width: 90%;
     top: 560px;
@@ -1277,11 +1224,9 @@ footer {
   }
 }
 @media (max-width: 768px) {
-  /*-----------------------SECCIÓN CONTACTO-----------------------*/
   .seccionContacto {
     width: 90%;
   }
-  /*-----------------------SECCIÓN INFORMACIÓN-----------------------*/
   .seccionInfo {
     width: 100%;
     padding: 24px 16px 80px 16px;
@@ -1295,12 +1240,10 @@ footer {
   .seccionInfo__div__table__tr__td {
     font-size: 10px;
   }
-  /*-----------------------SECCIÓN FORMULARIO-----------------------*/
   .seccionFormulario {
     top: 520px;
     padding: 32px 16px 40px 16px;
   }
-  /*-----------------------BANNER INICIAL-----------------------*/
   .imgFondoBannerContacto {
     width: 100%;
     height: 248px;
@@ -1308,7 +1251,6 @@ footer {
     background-position: bottom;
   }
 }
-/*-----------------------BANNER INICIAL-----------------------*/
 .sectionBanner_home {
   position: absolute;
   width: 70%;
@@ -1348,7 +1290,6 @@ footer {
   background-position: bottom;
 }
 
-/*-----------------------SECCIÓN SOLUCIONES-----------------------*/
 .contenedorSolucion {
   width: 80%;
   display: flex;
@@ -1375,7 +1316,6 @@ footer {
   text-align: right;
 }
 
-/*-----------------------SECCIÓN SOLUCIONES - CARDS-----------------------*/
 .cardSolucion {
   width: 272px;
   background-color: #FFFFFF;
@@ -1394,7 +1334,6 @@ footer {
   margin: 0px 0px 16px 0px;
 }
 
-/*-----------------------SECCIÓN NUESTROS CASOS DE ÉXITO-----------------------*/
 .cardCasoExitoHome {
   background-color: #FFFFFF;
   width: 30%;
@@ -1411,7 +1350,6 @@ footer {
   padding: 80px 0px 80px 0px;
 }
 
-/*-----------------------SECCIÓN EQUIPO-----------------------*/
 .contenedorCardsEquipoHome {
   width: 80%;
   display: grid;
@@ -1420,7 +1358,6 @@ footer {
   align-items: center;
 }
 
-/*-----------------------SECCIÓN EQUIPO - CARDS-----------------------*/
 .cardEquipoHome {
   width: 90%;
   height: auto;
@@ -1458,7 +1395,6 @@ footer {
   margin: 0px 0px 4px 0px;
 }
 
-/*-----------------------BOTÓN CONOCER MÁS-----------------------*/
 .btnConocerMas {
   margin: 24px 0px 0px 0px;
 }
@@ -1469,9 +1405,7 @@ footer {
   width: 80%;
 }
 
-/*-----------------------TABLET-----------------------*/
 @media (max-width: 1024px) {
-  /*-----------------------BANNER INICIAL-----------------------*/
   .sectionBanner_home {
     width: 90%;
   }
@@ -1481,7 +1415,6 @@ footer {
   .subtitulo_home {
     font-size: 32px;
   }
-  /*-----------------------SECCIÓN SOLUCIONES-----------------------*/
   .contenedorSolucion {
     width: 90%;
   }
@@ -1494,7 +1427,6 @@ footer {
   .justificacionTextR {
     text-align: left;
   }
-  /*-----------------------SECCIÓN SOLUCIONES - CARDS-----------------------*/
   .cardSolucion {
     width: 100%;
     margin: 0px 0px 16px 0px;
@@ -1505,16 +1437,13 @@ footer {
     margin: 0px 0px 16px 0px;
     padding: 32px 24px 32px 24px;
   }
-  /*-----------------------SECCIÓN NUESTROS CASOS DE ÉXITO-----------------------*/
   .cardCasoExitoHome {
     width: 100%;
     margin: 0px 0px 32px 0px;
   }
-  /*-----------------------BOTÓN CONOCER MÁS-----------------------*/
   .jusitificacion_btnConocerMas {
     width: 90%;
   }
-  /*-----------------------SECCIÓN EQUIPO-----------------------*/
   .contenedorCardsEquipoHome {
     width: 90%;
     grid-template-columns: 1fr 1fr;
@@ -1524,9 +1453,7 @@ footer {
     margin: 0px 0px 24px 0px;
   }
 }
-/*-----------------------MOBILE-----------------------*/
 @media (max-width: 768px) {
-  /*-----------------------BANNER INICIAL-----------------------*/
   .imgFondoBannerHome {
     width: 100%;
     height: 100vh;
@@ -1544,7 +1471,6 @@ footer {
     font-size: 24px;
     line-height: 24px;
   }
-  /*-----------------------SECCIÓN SOLUCIONES-----------------------*/
   .marginCardsSolucion {
     margin: 0px 0px 52px 0px;
   }
@@ -1552,7 +1478,6 @@ footer {
     padding: 16px 8px 16px 8px;
   }
 }
-/*-----------------------BANNER INICIAL-----------------------*/
 .imgFondoBannerNovedades {
   width: 100%;
   height: 400px;
@@ -1560,7 +1485,6 @@ footer {
   background-position: bottom;
 }
 
-/*-----------------------CONTENEDOR SECCIÓN NOVEDADES-----------------------*/
 .contenedorSeccionNovedades {
   display: flex;
   justify-content: space-between;
@@ -1568,7 +1492,6 @@ footer {
   margin: 0px;
 }
 
-/*-----------------------CARDS NOVEDADES-----------------------*/
 .seccionCardsNovedades {
   margin: 0px 0px 0px 24px;
   width: 70%;
@@ -1646,7 +1569,6 @@ footer {
   margin: 0px;
 }
 
-/*-----------------------SECCIÓN BUSQUEDA-----------------------*/
 .formBusqueda {
   background-color: #1D343E;
   width: 360px;
@@ -1657,7 +1579,6 @@ footer {
   margin: 0px 0px 24px 0px;
 }
 
-/*-----------------------SECCIÓN FILTROS-----------------------*/
 .btn_filtro {
   width: 100%;
   display: none;
@@ -1715,7 +1636,6 @@ footer {
 }
 
 @media (max-width: 1430px) {
-  /*-----------------------SECCIÓN FILTROS-----------------------*/
   .seccionFiltros {
     padding: 0px;
     margin: 0px 0px 32px 0px;
@@ -1727,13 +1647,11 @@ footer {
   .seccionFiltros__div {
     display: none;
   }
-  /*-----------------------CONTENEDOR SECCIÓN NOVEDADES-----------------------*/
   .contenedorSeccionNovedades {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
-  /*-----------------------CARDS NOVEDADES-----------------------*/
   .seccionCardsNovedades {
     margin: 0px;
     width: 100%;
@@ -1746,9 +1664,7 @@ footer {
     margin: 0px 0px 48px 0px;
   }
 }
-/*-----------------------TABLET-----------------------*/
 @media (max-width: 1024px) {
-  /*-----------------------CONTENEDOR SECCIÓN NOVEDADES-----------------------*/
   .contenedorSeccionNovedades {
     display: flex;
     flex-direction: column;
@@ -1759,16 +1675,13 @@ footer {
     padding: 0px 8px 0px 8px;
   }
 }
-/*-----------------------MOBILE-----------------------*/
 @media (max-width: 768px) {
-  /*-----------------------BANNER INICIAL-----------------------*/
   .imgFondoBannerNovedades {
     width: 100%;
     height: 248px;
     background-image: url("../images/imagenesBanners/imagenBanner_Actualidad_Mobile.png");
     background-position: bottom;
   }
-  /*-----------------------CARDS NOVEDADES-----------------------*/
   .cardNovedades {
     display: flex;
     width: 100%;

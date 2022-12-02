@@ -1,31 +1,23 @@
-/*-----------------------BANNER INICIAL-----------------------*/
 .imgFondoBannerContacto {
     width: 100%;
     height: 400px;
     background-image: url("../images/imagenesBanners/imagenBanner_Contacto.png");
     background-position: bottom;
 }
-
-
-/*-----------------------SECCIÓN CONTACTO-----------------------*/
 .seccionContacto {
     width: 80%;
     height: fit-content;
     position: relative;
 }
-
-/*-----------------------SECCIÓN INFORMACIÓN-----------------------*/
 .seccionInfo {
     background-color: #1D343E;
     width: 58%;
     padding: 40px 40px 48px 40px;
     right: 0px;
 }
-
 .seccionInfo__div {
     width: 80%;
 }
-
 .seccionInfo__div__div {
     margin: 0px 0px 40px 0px;
 }
@@ -33,7 +25,6 @@
 .seccionInfo__div__div__table {
     width: auto;
 }
-
 .seccionInfo__div__table__tr__th {
     width: 203px;
     background-color: #81939B;
@@ -45,7 +36,6 @@
     padding: 8px 0px 8px 0px;
     border: #1D343E solid 4px;
 }
-
 .seccionInfo__div__table__tr__td {
     padding: 8px 0px 8px 0px;
     border: #1D343E solid 4px;
@@ -57,8 +47,6 @@
     letter-spacing: 0.0025em;
     color: #FFFFFF;
 }
-
-/*-----------------------SECCIÓN FORMULARIO-----------------------*/
 .seccionFormulario {
     width: 50%;
     background-color: #FFFFFF;
@@ -67,87 +55,62 @@
     top: 48px;
     right: 0px;
 }
-
 .seccionFormulario__form__div {
     display: flex;
     flex-direction: column;
 }
-
-/*-----------------------SECCIÓN FORMULARIO - CHECKBOX-----------------------*/
 .contenedorCheckBox {
     display: flex;
     align-items: center;
     margin: 8px 0px 40px 0px;
 }
-
 .contenedorCheckBox__label {
     margin: 0px 0px 0px 8px;
 }
-
 .contenedorCheckBox__input {
     width: 16px;
     height: 16px;
 }
-
-/*-----------------------SECCIÓN FORMULARIO - BOTONES-----------------------*/
 .contenedorBotones {
     display: flex;
     justify-content: space-between;
 }
-
 .btnReset {
     border: none;
     background-color: #C19C00;
-
     &:hover {
         background-color: #dbb100;
     }
-
     &:focus {
         background-color: #705a00;
     }
 }
-
 @media (max-width: 1024px) {
-
-    /*-----------------------SECCIÓN CONTACTO-----------------------*/
     .seccionContacto {
         height: 1100px;
     }
-
-    /*-----------------------SECCIÓN INFORMACIÓN-----------------------*/
     .seccionInfo {
         width: 100%;
         padding: 40px 40px 80px 40px;
     }
-
     .seccionInfo__div {
         width: 90%;
     }
-
-    /*-----------------------SECCIÓN FORMULARIO-----------------------*/
     .seccionFormulario {
         width: 90%;
         top: 560px;
         right: 5%;
         left: 5%;
     }
-
 }
-
 @media (max-width: 768px) {
-
-    /*-----------------------SECCIÓN CONTACTO-----------------------*/
     .seccionContacto {
         width: 90%;
     }
-
-    /*-----------------------SECCIÓN INFORMACIÓN-----------------------*/
     .seccionInfo {
         width: 100%;
         padding: 24px 16px 80px 16px;
     }
-
     .seccionInfo__div {
         width: 100%;
     }
@@ -155,18 +118,13 @@
     .seccionInfo__div__div__table {
         width: 100%;
     }
-
     .seccionInfo__div__table__tr__td {
         font-size: 10px;
     }
-
-    /*-----------------------SECCIÓN FORMULARIO-----------------------*/
     .seccionFormulario {
         top: 520px;
         padding: 32px 16px 40px 16px;
     }
-
-    /*-----------------------BANNER INICIAL-----------------------*/
     .imgFondoBannerContacto {
         width: 100%;
         height: 248px;
